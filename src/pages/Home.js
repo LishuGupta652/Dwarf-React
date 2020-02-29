@@ -1,36 +1,14 @@
 import React from "react";
 import Header from "../components/Header";
-
+import About from "../components/About";
+import Mission from "../components/Mission";
 const Home = () => {
   return (
     <>
       <Header />
-      <div className="about-container">
-        <div className="about-head">
-          <h1 className="heading">
-            Who are we<span>?</span>
-          </h1>
-        </div>
-        <div className="about-content">
-          <span>D</span>warf. Incorporation is a organization which is operating
-          in the field of Construction, Fabrication, <b>Smart Gardens</b>, Smart
-          Library, Smart parking Solutions and various other smart city goals.
-          We started our journey in the year 2019 at New Delhi with a small team
-          of achievers. People behind Dwarf have remarkable experience in
-          Fabrication, <b>Designing</b>, <b>Finance</b> and <b>Marketing</b>.
-        </div>
-      </div>
+      <About />
+      <Mission />
 
-      <div className="mission">
-        <div className="mission-container">
-          <h1>Our mission</h1>
-          <p>
-            To Help India Achieve its smart City Objective, by Providing
-            Innovation, Best in Class Consulting, Solutions and services. We
-            shall make a joy for all stakeholders to work with us.
-          </p>
-        </div>
-      </div>
       <div className="space"></div>
     </>
   );

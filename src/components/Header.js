@@ -8,7 +8,7 @@ const Header = () => {
       <header>
         <div className="nav-container">
           <nav>
-            <img src={Logo} alt="logo" className="logo" />
+            <h1 className="logo">D</h1>
 
             <i class="fa fa-bars nav-links" aria-hidden="true"></i>
             <ul className="nav-links">
