@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
 :root {
   --secondary-black: #2c3e50;
 }
@@ -158,6 +160,7 @@ header .content {
   }
   .about-content {
     padding: 30px 30px;
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 500px) {
@@ -168,6 +171,42 @@ header .content {
 
 hr {
   margin: 50px 30px;
+}
+
+/* mission */
+.mission {
+  margin-top: 50px;
+  color: white;
+  height: 500px;
+  background-image: url(./images/img3.png);
+  background-attachment: fixed;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: "Open Sans";
+}
+.mission .mission-container h1 {
+  font-size: 4rem;
+}
+.mission .mission-container p {
+  color: #130f40;
+  font-size: 2.2rem;
+  line-height: 50px;
+  padding: 50px 50px;
+}
+
+@media (max-width: 864px) {
+  .mission {
+    height: auto;
+    background-position: -500px;
+  }
+  .mission .mission-container h1 {
+    font-size: 3rem;
+  }
+  .mission .mission-container p {
+    font-size: 2rem;
+    line-height: 40px;
+  }
 }
 
 .space {
