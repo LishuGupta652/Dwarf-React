@@ -10,8 +10,10 @@ const Header = () => {
           <nav>
             <img src={Logo} alt="logo" className="logo" />
 
+            <i class="fa fa-bars nav-links" aria-hidden="true"></i>
             <ul className="nav-links">
               <li className="nav-link-active">Home</li>
+
               <li>
                 <Link to="/contact">Contact</Link>
               </li>

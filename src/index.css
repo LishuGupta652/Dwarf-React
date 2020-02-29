@@ -36,6 +36,11 @@ nav .logo {
   height: 100%;
   padding: 2px;
 }
+.nav-container > nav > i {
+  display: none;
+  font-size: 2rem;
+  color: var(--secondary-black);
+}
 nav .nav-links {
   flex: 1;
   text-align: right;
@@ -104,6 +109,65 @@ header .content {
   .content .left h2 {
     font-size: 3rem;
   }
+  ul .nav-links {
+    display: none;
+  }
+  .nav-container > nav > ul {
+    display: none;
+  }
+  .nav-container > nav > i {
+    display: block;
+  }
+}
+
+/* About */
+.about-head {
+  height: 300px;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./images/question.png);
+  background-position: right;
+  background-size: 300px, 10px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: 0.25s ease-in-out;
+  color: var(--secondary-black);
+}
+.about-head span {
+  color: #e74c3c;
+}
+.about:hover {
+  background-size: 310px, 20px;
+}
+.about-content {
+  padding: 50px calc(10vw);
+  font-size: 1.5rem;
+}
+.about-content span {
+  font-size: 8rem;
+  line-height: 50px;
+  color: #e74c3c;
+}
+
+@media (max-width: 700px) {
+  .about-head {
+    font-size: 2rem;
+    height: 200px;
+  }
+  .about-content {
+    padding: 30px 30px;
+  }
+}
+@media (max-width: 500px) {
+  .about-head {
+    font-size: 1.5rem;
+  }
+}
+
+hr {
+  margin: 50px 30px;
 }
 
 .space {
