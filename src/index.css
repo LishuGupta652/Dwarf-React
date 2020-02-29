@@ -1,13 +1,111 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+:root {
+  --secondary-black: #2c3e50;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+body,
+html {
+  width: 100%;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/ind1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0%, 50%;
+}
+.nav-container {
+}
+nav {
+  display: flex;
+  color: #2c3e50;
+  width: 90%;
+  margin: 0 auto;
+  height: 80px;
+  align-items: center;
+}
+nav .logo {
+  font-size: 30px;
+  height: 100%;
+  padding: 2px;
+}
+nav .nav-links {
+  flex: 1;
+  text-align: right;
+}
+nav .nav-link-active {
+  color: #2e86de;
+}
+.nav-links li {
+  display: inline;
+  font-size: 1.2rem;
+  padding: 0 15px;
+  position: relative;
+}
+.nav-links li:hover {
+  color: #54a0ff;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: var(--secondary-black);
+}
+.nav-links li::after {
+  content: "";
+  position: absolute;
+  background-color: #54a0ff;
+  width: 0;
+  height: 3px;
+  border-radius: 5px;
+  bottom: -15px;
+  left: 30px;
+  transition: 0.25s ease-in-out;
+  opacity: 0;
+}
+.nav-links li:hover::after {
+  width: 90%;
+  left: 5px;
+  opacity: 1;
+}
+
+header .content {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  height: 80%;
+  color: #34495e;
+}
+.content .left {
+  width: 100%;
+  align-self: center;
+}
+.content .left h1 {
+  font-size: 8rem;
+}
+.content .left h2 {
+  font-size: 3rem;
+  color: #e74c3c;
+  line-height: 50px;
+}
+
+@media (max-width: 700px) {
+  .nav-container {
+    background-color: white;
+  }
+  .content .left h1 {
+    font-size: 5rem;
+  }
+  .content .left h2 {
+    font-size: 3rem;
+  }
+}
+
+.space {
+  height: 1000px;
 }
