@@ -1,10 +1,12 @@
 import React from "react";
-
+import Header from "../components/Header";
 const About = () => {
   return (
-    <div>
-      <h1>About</h1>
-    </div>
+    <>
+      <Header title="About Us" />
+
+      <div className="space"></div>
+    </>
   );
 };
 

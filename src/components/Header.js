@@ -1,8 +1,14 @@
-import React from "react";
-import Logo from "../images/icon.png";
+import React, { useState } from "react";
+// import Logo from "../images/icon.png";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = props => {
+  console.log(props);
+  let element;
+  if (props.title) {
+    element = <h1>{props.title}</h1>;
+  }
+
   return (
     <>
       <header>
@@ -10,9 +16,11 @@ const Header = () => {
           <nav>
             <h1 className="logo">D</h1>
 
-            <i class="fa fa-bars nav-links" aria-hidden="true"></i>
+            <i className="fa fa-bars nav-links" aria-hidden="true"></i>
             <ul className="nav-links">
-              <li className="nav-link-active">Home</li>
+              <li className="nav-link-active">
+                <Link to="/">Home</Link>
+              </li>
 
               <li>
                 <Link to="/contact">Contact</Link>
@@ -25,11 +33,17 @@ const Header = () => {
         </div>
         <div className="content">
           <div className="left">
-            <h1>Dwarf</h1>
-            <h2>Building Smart </h2>
-            <h2>
-              India<span className="dot">.</span>
-            </h2>
+            {props.title ? (
+              <h1 className="title">{props.title}</h1>
+            ) : (
+              <div>
+                <h1>Dwarf</h1>
+                <h2>Building Smart </h2>
+                <h2>
+                  India<span className="dot">.</span>
+                </h2>
+              </div>
+            )}
           </div>
           <div className="right"></div>
         </div>

@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <About />
+      <About title="About" />
       <Mission />
 
       <div className="space"></div>
