@@ -83,6 +83,7 @@ nav > .close > div:nth-child(1) {
   top: 8px;
 }
 nav > .close > div:nth-child(2) {
+  width: 35px;
   opacity: 0;
 }
 nav > .close > div:nth-child(3) {
@@ -186,6 +187,12 @@ header .content {
   }
   .content .left h2 {
     font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .content .left h1 {
+    font-size: 4rem;
   }
 }
 
