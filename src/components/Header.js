@@ -3,12 +3,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Header = props => {
-  console.log(props);
-  let element;
-  if (props.title) {
-    element = <h1>{props.title}</h1>;
-  }
-
+  const [isExpandable, setIsExpandable] = useState(false);
+  console.log(isExpandable);
   return (
     <>
       <header>
@@ -16,17 +12,36 @@ const Header = props => {
           <nav>
             <h1 className="logo">D</h1>
 
-            <i className="fa fa-bars nav-links" aria-hidden="true"></i>
-            <ul className="nav-links">
-              <li className="nav-link-active">
-                <Link to="/">Home</Link>
+            {/* <i
+              className="fa fa-bars"
+              aria-hidden="true"
+            ></i> */}
+            <div
+              className={`bar  ${isExpandable ? "close" : ""}`}
+              onClick={() => {
+                setIsExpandable(!isExpandable);
+              }}
+            >
+              <div className="fa-line"></div>
+              <div className="fa-line"></div>
+              <div className="fa-line"></div>
+            </div>
+            <ul className={`nav-links  ${isExpandable ? "mobile" : ""}`}>
+              <li className="active">
+                <Link to="/" onClick={() => setIsExpandable(false)}>
+                  Home
+                </Link>
               </li>
 
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact" onClick={() => setIsExpandable(false)}>
+                  Contact
+                </Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/about" onClick={() => setIsExpandable(false)}>
+                  About
+                </Link>
               </li>
             </ul>
           </nav>

@@ -43,8 +43,6 @@ header {
   background-attachment: fixed;
   background-position: 0%, 50%;
 }
-.nav-container {
-}
 nav {
   display: flex;
   color: #2c3e50;
@@ -52,24 +50,51 @@ nav {
   margin: 0 auto;
   height: 80px;
   align-items: center;
+  position: relative;
 }
 nav .logo {
   font-size: 30px;
   height: 100%;
+  width: 30px;
   padding: 3px;
   color: white;
   background-color: #2e86de;
 }
-.nav-container > nav > i {
-  display: none;
+.nav-container > nav > .bar {
+  position: absolute;
+  right: 20px;
+  top: 20px;
   font-size: 2rem;
-  color: var(--secondary-black);
+  cursor: pointer;
 }
+.bar div {
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  margin: 5px 0px;
+  background-color: var(--secondary-black);
+  position: relative;
+}
+.bar div:nth-child(2) {
+  width: 20px;
+}
+nav > .close > div:nth-child(1) {
+  transform: rotate(45deg);
+  top: 8px;
+}
+nav > .close > div:nth-child(2) {
+  opacity: 0;
+}
+nav > .close > div:nth-child(3) {
+  transform: rotate(-45deg);
+  top: -8px;
+}
+
 nav .nav-links {
   flex: 1;
   text-align: right;
 }
-nav .nav-link-active {
+nav > ul > li.active > a {
   color: #2e86de;
 }
 .nav-links li {
@@ -85,21 +110,21 @@ nav .nav-link-active {
   text-decoration: none;
   color: white;
 }
-.nav-links li::after {
+.nav-links li a::after {
   content: "";
   position: absolute;
   background-color: #54a0ff;
-  width: 0;
+  width: 0%;
   height: 3px;
-  border-radius: 5px;
-  bottom: -15px;
+  bottom: -10px;
   left: 30px;
+  border-radius: 5px;
   transition: 0.25s ease-in-out;
   opacity: 0;
 }
-.nav-links li:hover::after {
-  width: 90%;
-  left: 5px;
+.nav-links li a:hover::after {
+  width: 100%;
+  left: 0;
   opacity: 1;
 }
 
@@ -127,20 +152,40 @@ header .content {
   .nav-container {
     background-color: white;
   }
+  .nav-container .nav-links li a {
+    color: #2c3e50;
+    position: relative;
+  }
+
+  nav {
+    display: block;
+  }
+  #root > header > div.nav-container > nav > .bar {
+    display: block;
+  }
+  nav .nav-links {
+    text-align: center;
+    background-color: white;
+    display: block;
+    height: 0px;
+    overflow: hidden;
+  }
+  nav * {
+    transition: 0.25s ease-in-out;
+  }
+  nav .mobile {
+    height: 90vh;
+    overflow: initial;
+  }
+  nav .nav-links li {
+    display: block;
+    padding: 30px 0px;
+  }
   .content .left h1 {
-    font-size: 5rem;
+    font-size: 6rem;
   }
   .content .left h2 {
-    font-size: 3rem;
-  }
-  ul .nav-links {
-    display: none;
-  }
-  .nav-container > nav > ul {
-    display: none;
-  }
-  .nav-container > nav > i {
-    display: block;
+    font-size: 2.5rem;
   }
 }
 
