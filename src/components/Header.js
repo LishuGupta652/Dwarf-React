@@ -101,7 +101,7 @@ const Header = props => {
                   <h1>
                     <Typewriter
                       options={{
-                        strings: ["Dwarf", "We are here"],
+                        strings: ["Dwarf", "By You For You"],
                         autoStart: true,
                         loop: true,
                         delay: 100,
