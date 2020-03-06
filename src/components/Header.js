@@ -17,8 +17,8 @@ const Header = props => {
     timeline.fromTo(
       ".header",
       0.7,
-      { x: "-100vh", height: "0%", opacity: 0 },
-      { x: "0vh", height: "100%", opacity: 1 }
+      { x: "-100vh", opacity: 0 },
+      { x: "0vh", opacity: 1 }
     );
     timeline.fromTo(
       ".sub-heading",
@@ -29,14 +29,14 @@ const Header = props => {
     );
     timeline.fromTo(
       ".nav-links",
-      0.25,
+      0.35,
       { opacity: 0 },
       { opacity: 1 },
-      "-=0.3"
+      "-=0.1"
     );
     timeline.fromTo(
       ".logo",
-      0.25,
+      0.35,
       {
         width: "0px",
         padding: "0px",
