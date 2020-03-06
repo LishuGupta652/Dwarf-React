@@ -300,6 +300,35 @@ hr {
   }
 }
 
+/* Products  Products  Products  Products  Products  Products  */
+.products {
+  width: 100%;
+  background-color: teal;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 30px 0px;
+
+  grid-auto-rows: auto;
+}
+.poster {
+  height: 400px;
+  background-color: #e74c3c;
+  background-image: url("./images/img5.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.poster:first-child {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
 .space {
   height: 1000px;
 }

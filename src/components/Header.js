@@ -13,7 +13,7 @@ const Header = props => {
   const [isExpandable, setIsExpandable] = useState(false);
   const pageTitle = props.title;
 
-  useEffect(() => {
+  useEffect(props => {
     const anim = pageTitle === "Home" ? homePageAnimation() : null;
   }, []);
 
