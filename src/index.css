@@ -303,7 +303,7 @@ hr {
 /* Products  Products  Products  Products  Products  Products  */
 .products {
   width: 100%;
-  background-color: teal;
+  background-color: #34495e;
 }
 .container {
   width: 90%;
@@ -332,7 +332,8 @@ hr {
   transition: 0.35s ease-in-out;
 }
 .poster:hover {
-  transform: scaleX(3, 2);
+  transform: scale(1.1, 1.1);
+  box-shadow: 1px 1px 0px 10px rgba(0, 0, 0, 0.8);
 }
 .poster:first-child {
   border-top-left-radius: 3px;
