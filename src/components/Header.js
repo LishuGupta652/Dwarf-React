@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 // import Logo from "../images/icon.png";
 import { Link } from "react-router-dom";
+import Typewriter from "typewriter-effect";
 
 const Header = props => {
   const [isExpandable, setIsExpandable] = useState(false);
-  console.log(isExpandable);
   return (
     <>
       <header>
@@ -52,7 +52,15 @@ const Header = props => {
               <h1 className="title">{props.title}</h1>
             ) : (
               <div>
-                <h1>Dwarf</h1>
+                <h1>
+                  <Typewriter
+                    options={{
+                      strings: ["Dwarf", "We are here."],
+                      autoStart: true,
+                      loop: true
+                    }}
+                  />
+                </h1>
                 <h2>Building Smart </h2>
                 <h2>
                   India<span className="dot">.</span>
