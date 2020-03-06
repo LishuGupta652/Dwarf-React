@@ -318,12 +318,21 @@ hr {
 }
 .poster {
   height: 400px;
-  background-color: #e74c3c;
   background-image: url("./images/img5.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  align-items: center;
+  transition: 0.35s ease-in-out;
+}
+.poster:hover {
+  transform: scaleX(3, 2);
 }
 .poster:first-child {
   border-top-left-radius: 3px;
