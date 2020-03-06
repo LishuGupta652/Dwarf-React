@@ -4,6 +4,11 @@ import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 import { TimelineMax } from "gsap";
 
+import { gsap } from "gsap";
+import { CSSPlugin } from "gsap/CSSPlugin";
+
+// Force CSSPlugin to not get dropped during build
+gsap.registerPlugin(CSSPlugin);
 const Header = props => {
   const [isExpandable, setIsExpandable] = useState(false);
   const pageTitle = props.title;
