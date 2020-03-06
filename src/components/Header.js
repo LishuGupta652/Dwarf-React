@@ -14,6 +14,10 @@ const Header = props => {
   const pageTitle = props.title;
 
   useEffect(props => {
+    window.addEventListener("scroll", e => {
+      console.log(window.scrollY);
+    });
+
     const anim = pageTitle === "Home" ? homePageAnimation() : null;
   }, []);
 
