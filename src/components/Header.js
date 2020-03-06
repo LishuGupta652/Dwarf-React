@@ -123,6 +123,14 @@ const Header = props => {
                   <h2>
                     India<span className="dot">.</span>
                   </h2>
+                  <button
+                    className="button"
+                    onClick={e => {
+                      window.scrollTo(0, 770);
+                    }}
+                  >
+                    <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                  </button>
                 </div>
               )}
             </div>
