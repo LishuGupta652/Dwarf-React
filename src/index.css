@@ -38,6 +38,21 @@ html {
 }
 header {
   height: 100vh;
+  background: #eacda3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #d6ae7b,
+    #eacda3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #d6ae7b,
+    #eacda3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header {
   width: 100%;
@@ -342,6 +357,48 @@ hr {
 .poster:last-child {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
+}
+
+/* form form form form form form form */
+.contactus-container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+}
+form {
+  flex: 2;
+  padding-right: 30px;
+  margin-right: 30px;
+  border-right: 1px solid grey;
+}
+.contact-detail {
+  flex: 1;
+}
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
 }
 
 /* extras extras extras extras extras */
