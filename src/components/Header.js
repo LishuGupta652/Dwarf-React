@@ -6,9 +6,9 @@ import { TimelineMax } from "gsap";
 
 import { gsap } from "gsap";
 import { CSSPlugin } from "gsap/CSSPlugin";
-
 // Force CSSPlugin to not get dropped during build
 gsap.registerPlugin(CSSPlugin);
+
 const Header = props => {
   const [isExpandable, setIsExpandable] = useState(false);
   const pageTitle = props.title;
@@ -18,7 +18,8 @@ const Header = props => {
       console.log(window.scrollY);
     });
 
-    const anim = pageTitle === "Home" ? homePageAnimation() : null;
+    const anim =
+      pageTitle === "Home" ? homePageAnimation() : otherPageAnimations();
   }, []);
 
   const homePageAnimation = () => {
@@ -57,6 +58,22 @@ const Header = props => {
         ease: "Power2.easeInOut"
       },
       "-=.1"
+    );
+  };
+  const otherPageAnimations = () => {
+    const timeline = new TimelineMax();
+    timeline.fromTo(
+      ".header",
+      1,
+      { height: "0%" },
+      { height: "100%", ease: "Power2.easeInOut" }
+    );
+    timeline.fromTo(
+      ".sub-heading",
+      0.5,
+      { opacity: 0 },
+      { opacity: 1, ease: "Power2.easeInOut" },
+      "-=.2"
     );
   };
 
