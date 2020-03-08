@@ -339,6 +339,10 @@ hr {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
+.poster:last-child {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
 
 /* extras extras extras extras extras */
 .button {

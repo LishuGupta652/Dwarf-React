@@ -25,22 +25,22 @@ const Header = props => {
     const timeline = new TimelineMax();
     timeline.fromTo(
       ".header",
-      0.7,
-      { x: "-100vh", opacity: 0 },
-      { x: "0vh", opacity: 1 }
+      1,
+      { height: "0%" },
+      { height: "100%", ease: "Power2.easeInOut" }
     );
     timeline.fromTo(
       ".sub-heading",
       0.5,
       { opacity: 0 },
-      { opacity: 1 },
+      { opacity: 1, ease: "Power2.easeInOut" },
       "-=.2"
     );
     timeline.fromTo(
       ".nav-links",
       0.35,
       { opacity: 0 },
-      { opacity: 1 },
+      { opacity: 1, ease: "Power2.easeInOut" },
       "-=0.1"
     );
     timeline.fromTo(
@@ -53,7 +53,8 @@ const Header = props => {
       },
       {
         width: "30px",
-        padding: "3px"
+        padding: "3px",
+        ease: "Power2.easeInOut"
       },
       "-=.1"
     );
