@@ -147,6 +147,7 @@ nav > .logo {
   padding: 3px;
   color: white;
   background-color: #2e86de;
+  font-family: "Poppins";
 }
 /* closing icon animation on hover
 
@@ -208,6 +209,7 @@ header .content {
   margin: 0 auto;
   height: 80%;
   color: white;
+  line-height: 130px;
 }
 .content .left {
   width: 100%;

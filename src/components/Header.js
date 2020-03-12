@@ -27,6 +27,21 @@ const Header = props => {
 
   const homePageAnimation = () => {
     timeline.fromTo(
+      ".social-stag",
+      0.35,
+      {
+        opacity: 0,
+        x: "-10px"
+      },
+      {
+        opacity: 1,
+        x: "0px",
+        ease: "Power2.easeInOut",
+        stagger: 0.2
+      },
+      "-=.5"
+    );
+    timeline.fromTo(
       ".header",
       1,
       { height: "0%" },
@@ -218,17 +233,17 @@ const Header = props => {
             <div className="right"></div>
           </div>
           <div className="social-icons">
-            <div className="facebook">
+            <div className="facebook social-stag">
               <a href="https://www.facebook.com" target="_blank">
                 Facebook
               </a>
             </div>
-            <div className="twitter">
+            <div className="twitter social-stag">
               <a href="https://www.twitter.com" target="_blank">
                 Twitter
               </a>
             </div>
-            <div className="instagram">
+            <div className="instagram social-stag">
               <a href="https://www.instagram.com" target="_blank">
                 instagram
               </a>
