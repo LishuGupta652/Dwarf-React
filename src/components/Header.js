@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import Logo from "../images/icon.png";
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 import { TimelineMax } from "gsap";
@@ -66,7 +65,22 @@ const Header = props => {
         padding: "3px",
         ease: "Power2.easeInOut"
       },
-      "-=.1"
+      "-=.5"
+    );
+    timeline.fromTo(
+      ".fixed-nav",
+      0.35,
+      {
+        opacity: 0,
+        x: "-20px",
+        overflow: "hidden"
+      },
+      {
+        opacity: 1,
+        x: "0px",
+        ease: "Power2.easeInOut"
+      },
+      "-=.5"
     );
   };
   const otherPageAnimations = () => {
@@ -173,9 +187,21 @@ const Header = props => {
             <div className="right"></div>
           </div>
           <div className="social-icons">
-            <div className="facebook">Facebook</div>
-            <div className="twitter">Twitter</div>
-            <div className="instagram ">Instagram</div>
+            <div className="facebook">
+              <a href="https://www.facebook.com" target="_blank">
+                Facebook
+              </a>
+            </div>
+            <div className="twitter">
+              <a href="https://www.twitter.com" target="_blank">
+                Twitter
+              </a>
+            </div>
+            <div className="instagram">
+              <a href="https://www.instagram.com" target="_blank">
+                instagram
+              </a>
+            </div>
           </div>
         </div>
       </header>

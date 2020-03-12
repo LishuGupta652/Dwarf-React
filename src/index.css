@@ -94,7 +94,7 @@ nav .logo {
   color: white;
   background-color: #2e86de;
 }
-.nav-container > nav > .bar {
+/* .nav-container > nav > .bar {
   position: absolute;
   right: 20px;
   top: 20px;
@@ -112,7 +112,7 @@ nav .logo {
 }
 .bar div:nth-child(2) {
   width: 20px;
-}
+} */
 
 /* closing icon animation on hover
 ==================================================*/
@@ -199,13 +199,17 @@ header .content {
 .social-icons div {
   padding: 0px 20px;
 }
-.social-icons .facebook:hover {
+.social-icons a {
+  text-decoration: none;
+  color: grey;
+}
+.social-icons .facebook a:hover {
   color: #3b5998;
 }
-.social-icons .twitter:hover {
+.social-icons .twitter a:hover {
   color: #00acee;
 }
-.social-icons .instagram:hover {
+.social-icons .instagram a:hover {
   color: #c13584;
 }
 
