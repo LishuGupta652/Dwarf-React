@@ -95,16 +95,29 @@ const Header = props => {
     timeline.fromTo(
       ".header",
       1,
-      { x: "-100vw" },
-      { x: "0vw", ease: "Power2.easeInOut" },
-      "-=.5"
+      { height: "0%" },
+      { height: "100%", ease: "Power2.easeInOut" }
     );
     timeline.fromTo(
-      ".sub-heading",
+      ".title",
       0.5,
       { opacity: 0 },
       { opacity: 1, ease: "Power2.easeInOut" },
       "-=.2"
+    );
+    timeline.fromTo(
+      ".social-stag",
+      0.35,
+      {
+        opacity: 0,
+        x: "-10px"
+      },
+      {
+        opacity: 1,
+        x: "0px",
+        ease: "Power2.easeInOut",
+        stagger: 0.2
+      }
     );
   };
 
@@ -181,16 +194,16 @@ const Header = props => {
               <div>
                 <ul>
                   <Link to="/" onClick={() => setIsExpandable(false)}>
-                    <li>Home</li>
+                    <li className="nav-link-stag">Home</li>
                   </Link>
                   <Link to="/Images" onClick={() => setIsExpandable(false)}>
-                    <li>Gallary</li>
+                    <li className="nav-link-stag">Gallary</li>
                   </Link>
                   <Link to="/about" onClick={() => setIsExpandable(false)}>
-                    <li>About</li>
+                    <li className="nav-link-stag">About</li>
                   </Link>
                   <Link to="/contact" onClick={() => setIsExpandable(false)}>
-                    <li>Contact</li>
+                    <li className="nav-link-stag">Contact</li>
                   </Link>
                 </ul>
               </div>
@@ -233,17 +246,29 @@ const Header = props => {
           </div>
           <div className="social-icons">
             <div className="facebook social-stag">
-              <a href="https://www.facebook.com" target="_blank">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Facebook
               </a>
             </div>
             <div className="twitter social-stag">
-              <a href="https://www.twitter.com" target="_blank">
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Twitter
               </a>
             </div>
             <div className="instagram social-stag">
-              <a href="https://www.instagram.com" target="_blank">
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 instagram
               </a>
             </div>

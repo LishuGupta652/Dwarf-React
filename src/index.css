@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Tinos&display=swap");
 
+::selection {
+  background: black;
+  color: white;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -47,16 +51,15 @@ a {
 
 header {
   height: 100vh;
-  background: #eacda3; /* fallback for old browsers */
+  background: teal; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #d6ae7b,
+    teal,
     #eacda3
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #d6ae7b,
-    #eacda3
+    teal #eacda3
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   display: flex;
