@@ -14,7 +14,14 @@ const Header = props => {
   const pageTitle = props.title;
 
   const timeline = new TimelineMax();
-  timeline.to("body", 1, { css: { visibility: "visible" } });
+  timeline.to("body", 0.4, { css: { visibility: "visible" } });
+  timeline.fromTo(
+    ".social-icons",
+    0.5,
+    { opacity: 0 },
+    { opacity: 1, ease: "Power2.easeInOut", stagger: 0.5 },
+    "-=.2"
+  );
 
   useEffect(props => {
     window.addEventListener("scroll", e => {
@@ -36,7 +43,7 @@ const Header = props => {
       ".sub-heading",
       0.5,
       { opacity: 0 },
-      { opacity: 1, ease: "Power2.easeInOut" },
+      { opacity: 1, ease: "Power2.easeInOut", stagger: 0.5 },
       "-=.2"
     );
     timeline.fromTo(
@@ -64,10 +71,17 @@ const Header = props => {
   };
   const otherPageAnimations = () => {
     timeline.fromTo(
+      ".title",
+      0.3,
+      { y: "30px", opacity: 0 },
+      { y: "-30px", opacity: 1, ease: "Power2.easeInOut" }
+    );
+    timeline.fromTo(
       ".header",
-      1,
+      0.6,
       { height: "0%" },
-      { height: "100%", ease: "Power2.easeInOut" }
+      { height: "100%", ease: "Power2.easeInOut" },
+      "-=.5"
     );
     timeline.fromTo(
       ".sub-heading",
@@ -86,11 +100,7 @@ const Header = props => {
             <nav>
               <h1 className="logo">D</h1>
 
-              {/* <i
-              className="fa fa-bars"
-              aria-hidden="true"
-            ></i> */}
-              <div
+              {/* <div
                 className={`bar  ${isExpandable ? "close" : ""}`}
                 onClick={() => {
                   setIsExpandable(!isExpandable);
@@ -121,8 +131,11 @@ const Header = props => {
                     Contact
                   </Link>
                 </li>
-              </ul>
+              </ul> */}
             </nav>
+            <div className="fixed-nav">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
           </div>
           <div className="content">
             <div className="left">
@@ -146,18 +159,23 @@ const Header = props => {
                   <h2>
                     India<span className="dot">.</span>
                   </h2>
-                  <button
+                  {/* <button
                     className="button"
                     onClick={e => {
                       window.scrollTo(0, 770);
                     }}
                   >
                     <i class="fa fa-angle-double-down" aria-hidden="true"></i>
-                  </button>
+                  </button> */}
                 </div>
               )}
             </div>
             <div className="right"></div>
+          </div>
+          <div className="social-icons">
+            <div className="facebook">Facebook</div>
+            <div className="twitter">Twitter</div>
+            <div className="instagram ">Instagram</div>
           </div>
         </div>
       </header>
