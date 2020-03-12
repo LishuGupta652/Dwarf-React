@@ -27,21 +27,6 @@ const Header = props => {
 
   const homePageAnimation = () => {
     timeline.fromTo(
-      ".social-stag",
-      0.35,
-      {
-        opacity: 0,
-        x: "-10px"
-      },
-      {
-        opacity: 1,
-        x: "0px",
-        ease: "Power2.easeInOut",
-        stagger: 0.2
-      },
-      "-=.5"
-    );
-    timeline.fromTo(
       ".header",
       1,
       { height: "0%" },
@@ -90,6 +75,20 @@ const Header = props => {
         ease: "Power2.easeInOut"
       },
       "-=.5"
+    );
+    timeline.fromTo(
+      ".social-stag",
+      0.35,
+      {
+        opacity: 0,
+        x: "-10px"
+      },
+      {
+        opacity: 1,
+        x: "0px",
+        ease: "Power2.easeInOut",
+        stagger: 0.2
+      }
     );
   };
   const otherPageAnimations = () => {
