@@ -1,5 +1,6 @@
 import React from "react";
-
+import Product from "../pages/Product";
+import { Link } from "react-router-dom";
 const Products = () => {
   return (
     <div className="products">
@@ -8,16 +9,24 @@ const Products = () => {
       </div>
       <div className="container">
         <div className="poster">
-          <h1>Container</h1>
+          <Link to="/product/dwarf/Container">
+            <h1>Container</h1>
+          </Link>
         </div>
         <div className="poster">
-          <h1>Bicycle</h1>
+          <Link to="/product/dwarf/Container">
+            <h1>Bicycle</h1>
+          </Link>
         </div>
         <div className="poster">
-          <h1>Parks</h1>
+          <Link to="/product/dwarf/Container">
+            <h1>Parks</h1>
+          </Link>
         </div>
         <div className="poster">
-          <h1>Subway</h1>
+          <Link to="/product/dwarf/Container">
+            <h1>Subway</h1>
+          </Link>
         </div>
       </div>
     </div>

@@ -13,9 +13,12 @@ const Header = props => {
   const [isExpandable, setIsExpandable] = useState(false);
   const pageTitle = props.title;
 
+  const timeline = new TimelineMax();
+  timeline.to("body", 1, { css: { visibility: "visible" } });
+
   useEffect(props => {
     window.addEventListener("scroll", e => {
-      console.log(window.scrollY);
+      // console.log(window.scrollY);
     });
 
     const anim =
@@ -23,7 +26,6 @@ const Header = props => {
   }, []);
 
   const homePageAnimation = () => {
-    const timeline = new TimelineMax();
     timeline.fromTo(
       ".header",
       1,
@@ -61,7 +63,6 @@ const Header = props => {
     );
   };
   const otherPageAnimations = () => {
-    const timeline = new TimelineMax();
     timeline.fromTo(
       ".header",
       1,
@@ -105,7 +106,11 @@ const Header = props => {
                     Home
                   </Link>
                 </li>
-
+                <li className={`${pageTitle === "Images" ? "active" : ""}`}>
+                  <Link to="/images" onClick={() => setIsExpandable(false)}>
+                    Gallary
+                  </Link>
+                </li>
                 <li className={`${pageTitle === "About Us" ? "active" : ""}`}>
                   <Link to="/about" onClick={() => setIsExpandable(false)}>
                     About
