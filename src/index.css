@@ -40,6 +40,11 @@ html {
   visibility: hidden;
   font-family: "Poppins";
 }
+a {
+  color: white;
+  text-decoration: none;
+}
+
 header {
   height: 100vh;
   background: #eacda3; /* fallback for old browsers */
@@ -71,12 +76,33 @@ header {
 .fixed-nav {
   font-size: 30px;
   color: white;
-  padding: 23px 23px;
+  width: 80px;
+  height: 80px;
   position: fixed;
   right: 0;
   top: 0;
   background-color: var(--primary-theme);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.bar {
+  position: absolute;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.bar div {
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  margin: 5px 0px;
+  background-color: white;
+  position: relative;
+}
+.bar div:nth-child(2) {
+  width: 20px;
+}
+
 nav {
   display: flex;
   color: #2c3e50;
@@ -86,7 +112,7 @@ nav {
   align-items: center;
   position: relative;
 }
-nav .logo {
+nav > .logo {
   font-size: 30px;
   height: 100%;
   width: 30px;
@@ -94,27 +120,8 @@ nav .logo {
   color: white;
   background-color: #2e86de;
 }
-/* .nav-container > nav > .bar {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  font-size: 2rem;
-  cursor: pointer;
-}
-.bar div {
-  height: 3px;
-  width: 25px;
-  border-radius: 3px;
-  margin: 5px 0px;
-  background-color: var(--secondary-black);
-  position: relative;
-  display: none;
-}
-.bar div:nth-child(2) {
-  width: 20px;
-} */
-
 /* closing icon animation on hover
+
 ==================================================*/
 /* nav > .close > div:nth-child(1) {
   transform: rotate(45deg);
@@ -189,8 +196,8 @@ header .content {
 
 .social-icons {
   position: fixed;
-  left: -130px;
-  bottom: 200px;
+  left: -135px;
+  bottom: 250px;
   color: white;
   display: inline-flex;
   transform: rotate(-90deg);

@@ -112,8 +112,9 @@ const Header = props => {
         <div className="header">
           <div className="nav-container">
             <nav>
-              <h1 className="logo">D</h1>
-
+              <Link to="/" className="logo">
+                <div>D</div>
+              </Link>
               {/* <div
                 className={`bar  ${isExpandable ? "close" : ""}`}
                 onClick={() => {
@@ -148,7 +149,11 @@ const Header = props => {
               </ul> */}
             </nav>
             <div className="fixed-nav">
-              <i class="fa fa-bars" aria-hidden="true"></i>
+              <div className="bar">
+                <div className="fa-line"></div>
+                <div className="fa-line"></div>
+                <div className="fa-line"></div>
+              </div>
             </div>
           </div>
           <div className="content">
