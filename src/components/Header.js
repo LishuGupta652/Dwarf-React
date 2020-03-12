@@ -15,12 +15,6 @@ const Header = props => {
 
   const timeline = new TimelineMax();
   timeline.to("body", 0.2, { css: { visibility: "visible" } });
-  timeline.fromTo(
-    ".social-icons",
-    1,
-    { opacity: 0 },
-    { opacity: 1, ease: "Power2.easeInOut" }
-  );
 
   useEffect(props => {
     window.addEventListener("scroll", e => {
@@ -72,7 +66,7 @@ const Header = props => {
       0.35,
       {
         opacity: 0,
-        x: "-20px",
+        x: "-10px",
         overflow: "hidden"
       },
       {
@@ -85,16 +79,10 @@ const Header = props => {
   };
   const otherPageAnimations = () => {
     timeline.fromTo(
-      ".title",
-      0.3,
-      { y: "30px", opacity: 0 },
-      { y: "-30px", opacity: 1, ease: "Power2.easeInOut" }
-    );
-    timeline.fromTo(
       ".header",
-      0.6,
-      { height: "0%" },
-      { height: "100%", ease: "Power2.easeInOut" },
+      1,
+      { x: "-100vw" },
+      { x: "0vw", ease: "Power2.easeInOut" },
       "-=.5"
     );
     timeline.fromTo(
@@ -114,8 +102,8 @@ const Header = props => {
     timeline.fromTo(
       ".nav-open",
       1,
-      { x: "-200vh" },
-      { x: "0vh", ease: "Power2.easeInOut" }
+      { x: "-100vw" },
+      { x: "0vw", ease: "Power2.easeInOut" }
     );
     timeline.fromTo(
       ".nav-open ul li",
