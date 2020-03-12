@@ -73,6 +73,34 @@ header {
   background-attachment: fixed;
   background-position: 0%, 50%;
 }
+
+.nav-display {
+  display: none !important;
+}
+.nav-open {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+.nav-open ul {
+}
+.nav-open ul li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 50px;
+  padding: 30px 50px;
+  color: #c0c0c0;
+}
+.nav-open ul li:hover {
+  color: pink;
+}
 .fixed-nav {
   font-size: 30px;
   color: white;
@@ -85,6 +113,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 .bar {
   position: absolute;

@@ -11,15 +11,15 @@ gsap.registerPlugin(CSSPlugin);
 const Header = props => {
   const [isExpandable, setIsExpandable] = useState(false);
   const pageTitle = props.title;
+  console.log(isExpandable);
 
   const timeline = new TimelineMax();
-  timeline.to("body", 0.4, { css: { visibility: "visible" } });
+  timeline.to("body", 0.2, { css: { visibility: "visible" } });
   timeline.fromTo(
     ".social-icons",
-    0.5,
+    1,
     { opacity: 0 },
-    { opacity: 1, ease: "Power2.easeInOut", stagger: 0.5 },
-    "-=.2"
+    { opacity: 1, ease: "Power2.easeInOut" }
   );
 
   useEffect(props => {
@@ -106,6 +106,26 @@ const Header = props => {
     );
   };
 
+  const expandNavWithAnim = () => {
+    setIsExpandable(!isExpandable);
+
+    const timeline = new TimelineMax();
+
+    timeline.fromTo(
+      ".nav-open",
+      1,
+      { x: "-200vh" },
+      { x: "0vh", ease: "Power2.easeInOut" }
+    );
+    timeline.fromTo(
+      ".nav-open ul li",
+      1,
+      { x: "-20px", opacity: 0 },
+      { x: "0px", opacity: 1, ease: "Power2.easeInOut" },
+      "-=.5"
+    );
+  };
+
   return (
     <>
       <header>
@@ -148,11 +168,29 @@ const Header = props => {
                 </li>
               </ul> */}
             </nav>
-            <div className="fixed-nav">
+            <div className="fixed-nav" onClick={expandNavWithAnim}>
               <div className="bar">
                 <div className="fa-line"></div>
                 <div className="fa-line"></div>
                 <div className="fa-line"></div>
+              </div>
+            </div>
+            <div className={`nav-open ${isExpandable ? "" : "nav-display"}`}>
+              <div>
+                <ul>
+                  <Link to="/" onClick={() => setIsExpandable(false)}>
+                    <li>Home</li>
+                  </Link>
+                  <Link to="/Images" onClick={() => setIsExpandable(false)}>
+                    <li>Gallary</li>
+                  </Link>
+                  <Link to="/about" onClick={() => setIsExpandable(false)}>
+                    <li>About</li>
+                  </Link>
+                  <Link to="/contact" onClick={() => setIsExpandable(false)}>
+                    <li>Contact</li>
+                  </Link>
+                </ul>
               </div>
             </div>
           </div>
