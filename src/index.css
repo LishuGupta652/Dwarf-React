@@ -30,7 +30,7 @@
 :root {
   --theme-color: rgb(241, 196, 15);
   --theme-color-transparent: rgb(241, 196, 15, 0.8);
-  --secondary-color: #f39c12;
+  --secondary-color: rgb(241, 196, 15);
   --primary-font-color: rgb(29, 29, 29);
   --primary-theme: rgb(241, 196, 15, 0.8);
   --primary-theme-second: rgb(46, 134, 222, 0.8);
@@ -92,7 +92,6 @@ header {
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: var(--theme-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,7 +116,6 @@ header {
   position: fixed;
   right: 0;
   top: 0;
-  background-color: var(--primary-theme);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -358,7 +356,7 @@ header .content {
 .about-content span {
   font-size: 8rem;
   line-height: 50px;
-  color: var(--secondary-color);
+  color: var(--theme-color);
 }
 
 @media (max-width: 700px) {
