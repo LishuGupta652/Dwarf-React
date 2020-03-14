@@ -21,7 +21,7 @@ const Products = () => {
             </div>
           </div>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeIn" delay={500}>
+        <ScrollAnimation animateIn="fadeIn" delay={300}>
           <div className="showcase-two">
             <div className="showcase-img showcase-img-2"></div>
             <div className="showcase-content">

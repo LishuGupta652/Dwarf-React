@@ -336,7 +336,6 @@ header .content {
 
 /* About */
 .about-container {
-  font-family: "Open Sans", sans-serif;
 }
 .about-head {
   height: 250px;
@@ -387,16 +386,14 @@ hr {
 
 /* mission */
 .mission {
-  margin-top: 50px;
+  margin-top: 30px;
   color: white;
   height: 350px;
   background-attachment: fixed;
   display: flex;
   justify-content: center;
-  font-family: "Open Sans", sans-serif;
   color: var(--secondary-black);
   padding: 50px calc(10vw);
-  font-family: "Ibarra Real Nova", serif;
 }
 .mission .mission-container {
   height: 100%;
