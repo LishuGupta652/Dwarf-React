@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Products = () => {
   return (
     <div className="products">
-      <div className="container">
+      {/* <div className="container">
         <h1 style={{ textAlign: "center", color: "#e67e22" }}>Our Products</h1>
       </div>
       <div className="container">
@@ -28,7 +28,7 @@ const Products = () => {
             <h1>Subway</h1>
           </Link>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
