@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Tinos&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap");
 
 ::selection {
   background: black;
@@ -28,6 +29,8 @@
 
 :root {
   --theme-color: rgb(241, 196, 15);
+  --theme-color-transparent: rgb(241, 196, 15, 0.8);
+  --secondary-color: #f39c12;
   --primary-font-color: black;
   --primary-theme: rgb(241, 196, 15, 0.8);
   --primary-theme-second: rgb(46, 134, 222, 0.8);
@@ -156,7 +159,6 @@ nav > .logo {
   font-family: "Poppins";
 }
 /* closing icon animation on hover
-
 ==================================================*/
 /* nav > .close > div:nth-child(1) {
   transform: rotate(45deg);
@@ -319,25 +321,19 @@ header .content {
 
 /* About */
 .about-container {
+  font-family: "Open Sans", sans-serif;
 }
 .about-head {
-  height: 300px;
+  height: 250px;
   font-size: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-position: right;
-  background-size: 300px, 10px;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   transition: 0.25s ease-in-out;
   color: var(--secondary-black);
 }
 .about-head span {
-  color: #e74c3c;
-}
-.about:hover {
-  background-size: 310px, 20px;
+  color: var(--theme-color-transparent);
 }
 .about-content {
   padding: 50px calc(10vw);
@@ -346,7 +342,7 @@ header .content {
 .about-content span {
   font-size: 8rem;
   line-height: 50px;
-  color: #e74c3c;
+  color: var(--secondary-color);
 }
 
 @media (max-width: 700px) {
@@ -355,8 +351,12 @@ header .content {
     height: 200px;
   }
   .about-content {
-    padding: 30px 30px;
-    font-size: 1.4rem;
+    padding: 10px 10px;
+    font-size: 1.1rem;
+  }
+  .about-content span {
+    font-size: 5rem;
+    line-height: 50px;
   }
 }
 @media (max-width: 500px) {
@@ -373,14 +373,15 @@ hr {
 .mission {
   margin-top: 50px;
   color: white;
-  background-color: #f3f3f5;
-  height: 300px;
+  height: 350px;
   background-attachment: fixed;
   display: flex;
   text-align: center;
   justify-content: center;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   color: #130f40;
+  padding: 50px calc(10vw);
+  font-family: "Ibarra Real Nova", serif;
 }
 .mission .mission-container {
   height: 100%;
@@ -389,7 +390,7 @@ hr {
   font-size: 4rem;
 }
 .mission .mission-container p {
-  padding: 50px calc(10vw);
+  padding: 50px 10px;
   font-size: 1.5rem;
 }
 
