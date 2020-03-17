@@ -527,12 +527,22 @@ hr {
 .method-wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 80px;
   line-height: 80px;
   color: black;
 }
+.method-wrapper div {
+  width: 200px;
+}
 .method-wrapper h3 {
   color: black;
+}
+
+@media (max-width: 700px) {
+  .method-wrapper {
+    justify-content: center;
+  }
 }
 
 /* form form form form form form form */
