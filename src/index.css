@@ -3,9 +3,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Tinos&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap");
 
+:root {
+  --theme-color: rgb(241, 196, 15);
+  --theme-color-transparent: rgb(241, 196, 15, 0.8);
+  --secondary-color: rgb(241, 196, 15);
+  --primary-font-color: rgb(29, 29, 29);
+  --primary-theme: rgb(241, 196, 15, 0.8);
+  --primary-theme-second: rgb(46, 134, 222, 0.8);
+  --secondary-black: #2c3e50;
+}
+
 ::selection {
-  background: black;
-  color: white;
+  background: var(--theme-color);
+  color: black;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -27,16 +37,6 @@
   background: #555;
 }
 
-:root {
-  --theme-color: rgb(241, 196, 15);
-  --theme-color-transparent: rgb(241, 196, 15, 0.8);
-  --secondary-color: rgb(241, 196, 15);
-  --primary-font-color: rgb(29, 29, 29);
-  --primary-theme: rgb(241, 196, 15, 0.8);
-  --primary-theme-second: rgb(46, 134, 222, 0.8);
-  --secondary-black: #2c3e50;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -48,7 +48,7 @@ html {
   scroll-behavior: smooth;
 
   visibility: hidden;
-  font-family: "Poppins";
+  font-family: Poppins;
 }
 a {
   color: white;
@@ -503,6 +503,36 @@ hr {
   border-bottom-right-radius: 3px;
 }
 
+/* Methodology Methodology Methodology Methodology Methodology */
+.method {
+  padding: 100px 0px;
+  background-color: #fed330;
+  background-image: url(./images/method-wrapper.jpg);
+  background-size: cover;
+  color: rgb(61, 60, 60);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 80px;
+  font-family: Poppins;
+}
+.method-container {
+  width: 70%;
+  margin: 0 auto;
+}
+.method-container h3 {
+  line-height: 40px;
+}
+.method-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  line-height: 80px;
+}
+.method-wrapper h3 {
+}
+
 /* form form form form form form form */
 .contactus-container {
   width: 90%;
@@ -575,6 +605,12 @@ button[type="submit"]:hover {
 .md-space {
   height: 100px;
 }
+.lg-space {
+  height: 200px;
+}
 .mr-t-50 {
   margin-top: 200px;
+}
+.text-center {
+  text-align: center;
 }
