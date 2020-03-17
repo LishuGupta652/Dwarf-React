@@ -529,8 +529,10 @@ hr {
   justify-content: space-between;
   margin-top: 80px;
   line-height: 80px;
+  color: black;
 }
 .method-wrapper h3 {
+  color: black;
 }
 
 /* form form form form form form form */
