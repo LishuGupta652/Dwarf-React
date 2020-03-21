@@ -26,7 +26,6 @@ const Home = () => {
       <Method />
       <div className="lg-space" />
       <Products />
-      <div className="space"></div>
     </>
   );
 };
