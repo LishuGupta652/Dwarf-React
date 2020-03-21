@@ -128,7 +128,7 @@ const Header = props => {
 
     timeline.fromTo(
       ".nav-open",
-      1,
+      0.8,
       { x: "-100vw" },
       { x: "0vw", ease: "Power2.easeInOut" }
     );
@@ -218,7 +218,7 @@ const Header = props => {
                   <h1>
                     <Typewriter
                       options={{
-                        strings: ["Dwarf", "By You For You"],
+                        strings: ["Dwarf", "By   You For You"],
                         autoStart: true,
                         loop: true,
                         delay: 100,
