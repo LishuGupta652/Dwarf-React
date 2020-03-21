@@ -12,12 +12,11 @@ const About = () => {
           </div>
           <div className="about-content">
             <span>D</span>warf. Incorporation is a organization which is
-            operating in the field of Construction, Fabrication,{" "}
-            <b>Smart Gardens</b>, Smart Library, Smart parking Solutions and
-            various other smart city goals. We started our journey in the year
-            2019 at New Delhi with a small team of achievers. People behind
-            Dwarf have remarkable experience in Fabrication, <b>Designing</b>,{" "}
-            <b>Finance</b> and <b>Marketing</b>.
+            operating in the field of Construction, Fabrication, Smart Gardens,
+            Smart Library, Smart parking Solutions and various other smart city
+            goals. We started our journey in the year 2019 at New Delhi with a
+            small team of achievers. People behind Dwarf have remarkable
+            experience in Fabrication, Designing, Finance and Marketing.
           </div>
         </div>
       </div>

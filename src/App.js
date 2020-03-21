@@ -27,6 +27,7 @@ function App() {
             <Images />
           </Route>
           <Route path="/product/dwarf/:id" component={Product} />
+          <Route component={Home} />
         </Switch>
       </Router>
     </>
