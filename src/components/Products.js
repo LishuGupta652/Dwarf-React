@@ -27,9 +27,6 @@ const Products = () => {
           <div>
             <img src={Product3} />
           </div>
-          <div>
-            <img src={text} />
-          </div>
         </div>
       </div>
     </div>
