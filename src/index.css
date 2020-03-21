@@ -53,6 +53,7 @@ html {
 
   visibility: hidden;
   font-family: Poppins;
+  overflow-x: hidden;
 }
 a {
   color: white;
@@ -487,7 +488,7 @@ hr {
   }
 }
 
-.container {
+.container-grid {
   width: 90%;
   margin: 0 auto;
   display: grid;
@@ -603,6 +604,9 @@ hr {
   padding: 20px;
   color: white;
   background-color: var(--theme-color);
+}
+.products img {
+  height: 80%;
 }
 
 /* form form form form form form form */

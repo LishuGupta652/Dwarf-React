@@ -5,12 +5,12 @@ import Product3 from "../images/products/desk2.jpeg";
 import Product4 from "../images/products/digital.jpeg";
 import Product5 from "../images/products/library.jpeg";
 
-const Products = () => {
+const Gallary = () => {
   return (
     <div className="products">
       <div className="container">
         <div>
-          <h1>Products</h1>
+          <h1>Gallary</h1>
         </div>
         <div className="">
           <img src={Product1} />
@@ -23,4 +23,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default Gallary;
