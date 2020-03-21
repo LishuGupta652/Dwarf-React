@@ -442,7 +442,8 @@ hr {
   }
 }
 
-/* Products  Products  Products  Products  Products  Products  */
+/* Future tab  Future tab Future tab Future tab
+--------------------------------------------------- */
 .showcase {
   width: 100%;
   display: flex;
@@ -589,6 +590,19 @@ hr {
   .method-wrapper div {
     width: 300px;
   }
+}
+
+/* products products products products products products 
+----------------------------------------------- */
+.products .container {
+  width: 90%;
+  margin: 0 auto;
+}
+.products h1 {
+  font-size: 100px;
+  padding: 20px;
+  color: white;
+  background-color: var(--theme-color);
 }
 
 /* form form form form form form form */

@@ -4,6 +4,7 @@ import About from "../components/About";
 import Mission from "../components/Mission";
 import Future from "../components/Future";
 import Method from "../components/Method";
+import Products from "../components/Products";
 
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -23,6 +24,8 @@ const Home = () => {
       <Future />
       <div className="lg-space" />
       <Method />
+      <div className="lg-space" />
+      <Products />
       <div className="space"></div>
     </>
   );
