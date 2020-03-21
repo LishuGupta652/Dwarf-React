@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import About from "../components/About";
 import Mission from "../components/Mission";
 import Products from "../components/Products";
+import Method from "../components/Method";
 
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -20,6 +21,8 @@ const Home = () => {
 
       <div className="md-space" />
       <Products />
+      <div className="lg-space" />
+      <Method />
       <div className="space"></div>
     </>
   );
