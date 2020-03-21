@@ -269,7 +269,7 @@ const Header = props => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                instagram
+                Instagram
               </a>
             </div>
           </div>
