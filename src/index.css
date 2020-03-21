@@ -511,7 +511,7 @@ hr {
 /* Methodology Methodology Methodology Methodology Methodology */
 .method {
   padding: 100px 0px;
-  background-color: var(--secondary-color);
+  background-color: var(--theme-color);
   background-size: cover;
   color: rgb(61, 60, 60);
 

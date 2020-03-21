@@ -6,9 +6,7 @@ const About = () => {
       <div className="about-container">
         <div>
           <div className="about-head">
-            <h1 className="heading">
-              Who are we<span>?</span>
-            </h1>
+            <h1 className="heading">Who are we</h1>
           </div>
           <div className="about-content">
             <span>D</span>warf. Incorporation is a organization which is
