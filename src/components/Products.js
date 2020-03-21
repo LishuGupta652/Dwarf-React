@@ -5,6 +5,8 @@ import Product3 from "../images/products/desk2.jpeg";
 import Product4 from "../images/products/digital.jpeg";
 import Product5 from "../images/products/library.jpeg";
 
+import text from "../images/text.jpg";
+
 const Products = () => {
   return (
     <div className="products">
@@ -12,11 +14,22 @@ const Products = () => {
         <div>
           <h1>Products</h1>
         </div>
-        <div className="">
-          <img src={Product1} />
-          <img src={Product2} />
-          <img src={Product3} />
-          <img src={Product5} />
+        <div className="grid">
+          <div>
+            <img src={Product1} />
+          </div>
+          <div>
+            <img src={Product5} />
+          </div>
+          <div>
+            <img src={Product2} />
+          </div>
+          <div>
+            <img src={Product3} />
+          </div>
+          <div>
+            <img src={text} />
+          </div>
         </div>
       </div>
     </div>

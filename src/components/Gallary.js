@@ -12,7 +12,7 @@ const Gallary = () => {
         <div>
           <h1>Gallary</h1>
         </div>
-        <div className="grid">
+        <div className="">
           <img src={Product1} />
           <img src={Product2} />
           <img src={Product3} />
