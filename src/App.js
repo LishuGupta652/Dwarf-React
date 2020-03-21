@@ -9,6 +9,8 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Product from "./pages/Product";
 import Images from "./pages/Images";
+import NotFound from "./pages/NotFound";
+
 function App() {
   return (
     <>
@@ -27,7 +29,7 @@ function App() {
             <Images />
           </Route>
           <Route path="/product/dwarf/:id" component={Product} />
-          <Route component={Home} />
+          <Route component={NotFound} />
         </Switch>
       </Router>
     </>
