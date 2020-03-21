@@ -614,6 +614,20 @@ hr {
   grid-auto-rows: auto;
 }
 
+/* fOOTER FOOTER FOOTER FOOTER FOOTER  
+----------------------------------------------- */
+footer {
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+footer h2 {
+  color: rgb(44, 43, 43);
+}
+footer h3 {
+  color: rgb(83, 82, 82);
+}
+
 /* form form form form form form form */
 .contactus-container {
   width: 90%;
