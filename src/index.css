@@ -223,11 +223,12 @@ header .content {
   align-self: center;
 }
 .content .left h1 {
+  color: var(--theme-color);
   font-size: 6.5rem;
 }
 .content .left h2 {
   font-size: 2.5rem;
-  color: black;
+  color: white;
   line-height: 30px;
 }
 
