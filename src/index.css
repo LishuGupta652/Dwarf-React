@@ -607,7 +607,8 @@ hr {
 }
 .products .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, auto);
   row-gap: 10px;
   column-gap: 10px;
   grid-auto-rows: auto;
