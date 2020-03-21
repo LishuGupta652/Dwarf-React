@@ -532,7 +532,7 @@ hr {
   /* background-color: var(--theme-color); */
   background-repeat: no-repeat;
   background-size: 80%;
-  color: rgb(61, 60, 60);
+  color: rgb(31, 31, 31);
 
   display: flex;
   justify-content: center;
@@ -555,6 +555,7 @@ hr {
 }
 .method-container h3 {
   line-height: 40px;
+  color: rgb(50, 50, 50);
 }
 .method-wrapper {
   display: flex;
@@ -562,13 +563,13 @@ hr {
   flex-wrap: wrap;
   margin-top: 80px;
   line-height: 80px;
-  color: black;
+  color: rgb(41, 41, 41);
 }
 .method-wrapper div {
   width: 200px;
 }
 .method-wrapper h3 {
-  color: black;
+  color: rgb(41, 41, 41);
 }
 
 @media (max-width: 900px) {
@@ -623,11 +624,23 @@ footer {
 }
 footer h2 {
   color: rgb(44, 43, 43);
+  position: relative;
+  font-size: 18px;
+}
+.foot {
+  position: relative;
+}
+.foot::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: pink;
 }
 footer h3 {
   color: rgb(83, 82, 82);
 }
-
 /* form form form form form form form */
 .contactus-container {
   width: 90%;
