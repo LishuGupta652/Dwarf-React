@@ -5,7 +5,7 @@ import Mission from "../components/Mission";
 import Future from "../components/Future";
 import Method from "../components/Method";
 import Products from "../components/Products";
-import Footer from "../components/Footer";
+
 import ScrollAnimation from "react-animate-on-scroll";
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
     <>
       <Header title="Home" />
 
-      <ScrollAnimation animateIn="fadeIn">
+      <ScrollAnimation animateOnce animateIn="fadeIn">
         <About />
       </ScrollAnimation>
 

@@ -6,10 +6,10 @@ const Mission = () => {
     <>
       <div className="mission">
         <div className="mission-container">
-          <ScrollAnimation animateIn="fadeIn">
+          <ScrollAnimation animateOnce animateIn="fadeIn">
             <h1>Our mission</h1>
           </ScrollAnimation>
-          <ScrollAnimation animateIn="fadeIn">
+          <ScrollAnimation animateOnce animateIn="fadeIn">
             <p>
               To Help India Achieve its smart City Objective, by Providing
               Innovation, Best in Class Consulting, Solutions and services. We

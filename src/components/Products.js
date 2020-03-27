@@ -4,7 +4,7 @@ import Product2 from "../images/products/desk.jpeg";
 import Product3 from "../images/products/desk2.jpeg";
 import Product4 from "../images/products/library.jpeg";
 
-import text from "../images/text.jpg";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const Products = () => {
   return (
@@ -15,7 +15,11 @@ const Products = () => {
         </div>
         <div className="grid">
           <div className="pa p01">
-            <img src={Product1} />
+            <div className="img">
+              <ScrollAnimation animateOnce animateIn="fadeIn">
+                <img src={Product1} />
+              </ScrollAnimation>
+            </div>
             <h2>Gardens</h2>
           </div>
           {/* <div className="pa p02">
@@ -23,7 +27,11 @@ const Products = () => {
           </div> */}
           <div className="pa p03">
             <h2>Containers</h2>
-            <img src={Product3} />
+            <div className="img">
+              <ScrollAnimation animateOnce animateIn="fadeIn">
+                <img src={Product3} />
+              </ScrollAnimation>
+            </div>
           </div>
           {/* <div className="pa p04">
             <img src={Product4} />
