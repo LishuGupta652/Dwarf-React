@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer>
       <h2 className="foot">
-        <i class="fa fa-copyright" aria-hidden="true"></i> DwarfX 2020.
+        <i className="fa fa-copyright" aria-hidden="true"></i> DwarfX 2020.
       </h2>
     </footer>
   );

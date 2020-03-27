@@ -19,19 +19,11 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/contact/">
-            <Contact />
-          </Route>
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route exact path="/images">
-            <Images />
-          </Route>
-          <Route path="/product/dwarf/:id" component={Product} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/contact/" component={Contact} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/images" component={Images} />
+          <Route path="/dwarf/product/:id" component={Product} />
           <Route component={NotFound} />
         </Switch>
         <div className="md-space" />
