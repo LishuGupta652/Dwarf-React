@@ -91,6 +91,7 @@ const Header = props => {
       }
     );
   };
+
   const otherPageAnimations = () => {
     timeline.fromTo(
       ".header",
@@ -150,38 +151,6 @@ const Header = props => {
               <Link to="/" className="logo">
                 <div>D</div>
               </Link>
-              {/* <div
-                className={`bar  ${isExpandable ? "close" : ""}`}
-                onClick={() => {
-                  setIsExpandable(!isExpandable);
-                }}
-              >
-                <div className="fa-line"></div>
-                <div className="fa-line"></div>
-                <div className="fa-line"></div>
-              </div>
-              <ul className={`nav-links  ${isExpandable ? "mobile" : ""}`}>
-                <li className={` ${pageTitle === "Home" ? "active" : ""}`}>
-                  <Link to="/" onClick={() => setIsExpandable(false)}>
-                    Home
-                  </Link>
-                </li>
-                <li className={`${pageTitle === "Images" ? "active" : ""}`}>
-                  <Link to="/images" onClick={() => setIsExpandable(false)}>
-                    Gallary
-                  </Link>
-                </li>
-                <li className={`${pageTitle === "About Us" ? "active" : ""}`}>
-                  <Link to="/about" onClick={() => setIsExpandable(false)}>
-                    About
-                  </Link>
-                </li>
-                <li className={`${pageTitle === "Contact Us" ? "active" : ""}`}>
-                  <Link to="/contact" onClick={() => setIsExpandable(false)}>
-                    Contact
-                  </Link>
-                </li>
-              </ul> */}
             </nav>
             <div className="fixed-nav" onClick={expandNavWithAnim}>
               <div className="bar">
@@ -196,13 +165,13 @@ const Header = props => {
                   <Link to="/" onClick={() => setIsExpandable(false)}>
                     <li className="nav-link-stag">Home</li>
                   </Link>
-                  <Link to="/Images" onClick={() => setIsExpandable(false)}>
+                  <Link to="/Images/#" onClick={() => setIsExpandable(false)}>
                     <li className="nav-link-stag">Gallary</li>
                   </Link>
-                  <Link to="/about" onClick={() => setIsExpandable(false)}>
+                  <Link to="/about/#" onClick={() => setIsExpandable(false)}>
                     <li className="nav-link-stag">About</li>
                   </Link>
-                  <Link to="/contact" onClick={() => setIsExpandable(false)}>
+                  <Link to="/contact/#" onClick={() => setIsExpandable(false)}>
                     <li className="nav-link-stag">Contact</li>
                   </Link>
                 </ul>
@@ -231,14 +200,6 @@ const Header = props => {
                   <h2>
                     India<span className="dot">.</span>
                   </h2>
-                  {/* <button
-                    className="button"
-                    onClick={e => {
-                      window.scrollTo(0, 770);
-                    }}
-                  >
-                    <i class="fa fa-angle-double-down" aria-hidden="true"></i>
-                  </button> */}
                 </div>
               )}
             </div>

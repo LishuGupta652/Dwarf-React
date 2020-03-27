@@ -6,7 +6,6 @@ import Future from "../components/Future";
 import Method from "../components/Method";
 import Products from "../components/Products";
 import Footer from "../components/Footer";
-
 import ScrollAnimation from "react-animate-on-scroll";
 
 const Home = () => {
@@ -27,8 +26,6 @@ const Home = () => {
       <Method />
       <div className="lg-space" />
       <Products />
-      <div className="md-space" />
-      <Footer />
     </>
   );
 };

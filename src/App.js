@@ -11,6 +11,9 @@ import Product from "./pages/Product";
 import Images from "./pages/Images";
 import NotFound from "./pages/NotFound";
 
+// component
+import Footer from "./components/Footer";
+
 function App() {
   return (
     <>
@@ -19,7 +22,7 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="/contact">
+          <Route exact path="/contact/">
             <Contact />
           </Route>
           <Route exact path="/about">
@@ -31,6 +34,8 @@ function App() {
           <Route path="/product/dwarf/:id" component={Product} />
           <Route component={NotFound} />
         </Switch>
+        <div className="md-space" />
+        <Footer />
       </Router>
     </>
   );
