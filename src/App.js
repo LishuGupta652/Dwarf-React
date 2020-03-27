@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 //pages
 import Home from "./pages/Home";
@@ -17,18 +17,16 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <Router>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/contact/" component={Contact} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/images" component={Images} />
-          <Route path="/dwarf/product/:id" component={Product} />
-          <Route component={NotFound} />
-        </Switch>
-        <div className="md-space" />
-        <Footer />
-      </Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/contact/" component={Contact} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/images" component={Images} />
+        <Route path="/dwarf/product/:id" component={Product} />
+        <Route component={NotFound} />
+      </Switch>
+      <div className="md-space" />
+      <Footer />
     </>
   );
 }
