@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import About from "../components/About";
+import WhoAreWe from "../components/AboutPage/WhoAreWe";
 import Mission from "../components/Mission";
 import Future from "../components/Future";
 import Method from "../components/Method";
@@ -14,7 +14,7 @@ const Home = () => {
       <Header title="Home" />
 
       <ScrollAnimation animateOnce animateIn="fadeIn">
-        <About />
+        <WhoAreWe />
       </ScrollAnimation>
 
       <div className="md-space" />

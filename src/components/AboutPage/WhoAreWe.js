@@ -1,14 +1,14 @@
 import React from "react";
 
-const About = () => {
+const WhoAreWe = () => {
   return (
     <>
-      <div className="about-container">
+      <div className="wwe-container">
         <div>
-          <div className="about-head">
+          <div className="wwe-head">
             <h1 className="heading">Who are we</h1>
           </div>
-          <div className="about-content">
+          <div className="wwe-content">
             <span>D</span>warf. Incorporation is a organization which is
             operating in the field of Construction, Fabrication, Smart Gardens,
             Smart Library, Smart parking Solutions and various other smart city
@@ -22,4 +22,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default WhoAreWe;

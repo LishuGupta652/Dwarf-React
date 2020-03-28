@@ -7,7 +7,7 @@ const Mission = () => {
       <div className="mission">
         <div className="mission-container">
           <ScrollAnimation animateOnce animateIn="fadeIn">
-            <h1>Our mission</h1>
+            <h1 className="heading">Our mission</h1>
           </ScrollAnimation>
           <ScrollAnimation animateOnce animateIn="fadeIn">
             <p>

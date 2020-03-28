@@ -1,11 +1,14 @@
 import React from "react";
 import Header from "../components/Header";
+import WhoAreWe from "../components/AboutPage/WhoAreWe";
+import AboutInfo from "../components/AboutPage/AboutInfo";
 
 const About = () => {
   return (
     <>
       <Header title="About Us" />
-      <div className="space"></div>
+      <WhoAreWe />
+      <AboutInfo />
     </>
   );
 };
