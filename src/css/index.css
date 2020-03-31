@@ -269,8 +269,8 @@ header .content {
   background-color: #00acee;
   color: var(--font-color);
 }
-.social-icons .instagram a:hover {
-  background-color: #c13584;
+.social-icons .linkedin a:hover {
+  background-color: #0e76a8;
   color: var(--font-color);
 }
 .social-icons a::after {

@@ -12,9 +12,7 @@ const Products = () => {
   return (
     <div className="products">
       <div className="container">
-        <div>
-          <h1>Products</h1>
-        </div>
+        <div>{/* <h1>Products</h1> */}</div>
         <div className="grid">
           <div className="pa p01">
             <div className="img">

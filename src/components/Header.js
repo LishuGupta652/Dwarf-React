@@ -227,13 +227,13 @@ const Header = props => {
                 Twitter
               </a>
             </div>
-            <div className="instagram social-stag">
+            <div className="linkedin social-stag">
               <a
-                href="https://www.instagram.com"
+                href="https://www.linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Instagram
+                Linkedin
               </a>
             </div>
           </div>
