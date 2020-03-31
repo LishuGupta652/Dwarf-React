@@ -2,9 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
 
 :root {
-  --theme-color: rgb(255, 111, 45);
-  /* --theme-color: #8fe33e; */
-  /* --secondary-color: rgb(241, 196, 15); */
+  --theme-color: rgb(254, 178, 15);
   --secondary-color: #e87c1e;
   --third-color: #ff2721;
   --primary-font-color: rgb(29, 29, 29);
@@ -157,13 +155,12 @@ nav {
   position: relative;
 }
 nav > .logo {
-  font-size: 30px;
-  height: 100%;
-  width: 30px;
-  padding: 3px;
+  height: 50px;
+  width: 50px !important;
   color: black;
-  background-color: var(--theme-color);
-  font-family: "Poppins";
+  background-image: url(../images/logo.png);
+  background-size: 50px 50px;
+  background-repeat: none;
 }
 
 @media (max-width: 700px) {

@@ -149,7 +149,7 @@ const Header = props => {
           <div className="nav-container">
             <nav>
               <Link to="/" className="logo">
-                <div>D</div>
+                <div></div>
               </Link>
             </nav>
             <div className="fixed-nav" onClick={expandNavWithAnim}>
