@@ -9,7 +9,6 @@ const Images = () => {
       <Header title="Images" />
       <div className="lg-space" />
       <Gallary />
-      <div className="space"></div>
     </>
   );
 };
