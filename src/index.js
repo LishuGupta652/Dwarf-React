@@ -10,11 +10,14 @@ import "./css/contact.css";
 
 // Context API
 import { ThemeProvider } from "./context/ThemeContext";
+import { ProductProvider } from "./context/ProductContext";
 
 ReactDOM.render(
   <ThemeProvider>
-    <div className="production">In production App</div>
-    <App />
+    <ProductProvider>
+      <div className="production">In production App</div>
+      <App />
+    </ProductProvider>
   </ThemeProvider>,
   document.getElementById("root")
 );

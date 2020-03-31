@@ -11,8 +11,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 const Products = () => {
   return (
     <div className="products">
-      <div className="container">
-        <div>{/* <h1>Products</h1> */}</div>
+      {/* <div className="container">
         <div className="grid">
           <div className="pa p01">
             <div className="img">
@@ -24,9 +23,6 @@ const Products = () => {
             </div>
             <h2>Gardens</h2>
           </div>
-          {/* <div className="pa p02">
-            <img src={Product2} />
-          </div> */}
           <div className="pa p03">
             <h2>Containers</h2>
             <div className="img">
@@ -37,11 +33,8 @@ const Products = () => {
               </ScrollAnimation>
             </div>
           </div>
-          {/* <div className="pa p04">
-            <img src={Product4} />
-          </div> */}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
