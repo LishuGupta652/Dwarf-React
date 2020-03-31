@@ -13,7 +13,7 @@ import { ThemeProvider } from "./context/ThemeContext";
 
 ReactDOM.render(
   <ThemeProvider>
-    <div className="production">In production</div>
+    <div className="production">In production App</div>
     <App />
   </ThemeProvider>,
   document.getElementById("root")

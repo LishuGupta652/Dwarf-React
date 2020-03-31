@@ -1,0 +1,8 @@
+.production {
+  background-color: rgba(240, 50, 50);
+  color: white;
+  text-align: center;
+  width: 100vw;
+  text-transform: uppercase;
+  position: absolute;
+}
