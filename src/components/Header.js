@@ -165,6 +165,9 @@ const Header = props => {
                   <Link to="/" onClick={() => setIsExpandable(false)}>
                     <li className="nav-link-stag">Home</li>
                   </Link>
+                  <Link to="/products/#" onClick={() => setIsExpandable(false)}>
+                    <li className="nav-link-stag">Products</li>
+                  </Link>
                   <Link to="/Images/#" onClick={() => setIsExpandable(false)}>
                     <li className="nav-link-stag">Gallary</li>
                   </Link>

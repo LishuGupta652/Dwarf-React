@@ -1,11 +1,12 @@
 import React from "react";
+import Header from "../components/Header";
+import Products from "../components/Products";
 
 const Product = props => {
-  const params = props.match.params;
-  console.log(params);
   return (
     <div>
-      <h1>{params.id}</h1>
+      <Header title="Products" />
+      <Products />
     </div>
   );
 };

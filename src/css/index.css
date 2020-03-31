@@ -668,3 +668,9 @@ footer h3 {
 ul {
   list-style: none;
 }
+.ex-vp {
+  background-color: var(--theme-color);
+  font-size: 5vw;
+  padding: 50px;
+  color: #414141;
+}

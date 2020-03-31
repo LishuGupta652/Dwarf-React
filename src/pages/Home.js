@@ -8,6 +8,8 @@ import Products from "../components/Products";
 
 import ScrollAnimation from "react-animate-on-scroll";
 
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <>
@@ -24,8 +26,13 @@ const Home = () => {
       <Future />
       <div className="lg-space" />
       <Method />
-      <div className="lg-space" />
-      <Products />
+
+      <div className="heading ex-vp">
+        <Link to="/products">
+          <h1>View Products</h1>
+          <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+        </Link>
+      </div>
     </>
   );
 };
