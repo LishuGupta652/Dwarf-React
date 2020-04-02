@@ -7,6 +7,7 @@ import * as serviceWorker from "./serviceWorker";
 import "./css/index.css";
 import "./css/about.css";
 import "./css/contact.css";
+import "./css/product.css";
 
 // Context API
 import { ThemeProvider } from "./context/ThemeContext";

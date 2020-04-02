@@ -534,64 +534,6 @@ hr {
   }
 }
 
-/* products products products products products products 
------------------------------------------------ */
-.products .container {
-  width: 90%;
-  margin: 0 auto;
-}
-.products h1 {
-  font-size: 100px;
-  padding: 20px;
-  color: white;
-  background-color: var(--theme-color);
-}
-.products .pa {
-  width: 100%;
-  height: 100%;
-  margin: 40px 0;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: auto;
-  padding: 10px 0;
-  position: relative;
-  transition: 0.4s ease-in-out;
-}
-.products h2 {
-  font-size: 100px;
-  padding: 20px;
-  position: absolute;
-  bottom: 20px;
-  color: var(--theme-color);
-  z-index: 2;
-}
-.p01 h2 {
-  right: 10px;
-}
-.p01 .img {
-  grid-column: 1/11;
-}
-.p03 .img {
-  grid-column: 3/13;
-}
-.products .grid img {
-  /* Just in case there are inline attributes */
-  width: 100% !important;
-  height: 500px !important;
-  border-radius: 2px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-  cursor: pointer;
-}
-
-@media (max-width: 800px) {
-  .products h1 {
-    font-size: 50px;
-  }
-  .p01 .img {
-    grid-column: 1/12;
-  }
-}
-
 /* fOOTER FOOTER FOOTER FOOTER FOOTER  
 ----------------------------------------------- */
 footer {
@@ -667,10 +609,4 @@ footer h3 {
 }
 ul {
   list-style: none;
-}
-.ex-vp {
-  background-color: var(--theme-color);
-  font-size: 5vw;
-  padding: 50px;
-  color: #414141;
 }
