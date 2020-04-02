@@ -6,11 +6,9 @@ import Products from "../components/Products";
 import { ThemeContext } from "../context/ThemeContext";
 
 const Product = props => {
-  const data = useContext(ThemeContext);
   return (
     <div>
       <Header title="Products" />
-      <h1>{data}</h1>
       <Products />
     </div>
   );

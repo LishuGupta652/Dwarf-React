@@ -2,7 +2,8 @@
   background-color: rgba(240, 50, 50);
   color: white;
   text-align: center;
-  width: 100vw;
+  width: calc(100vw - 10px);
   text-transform: uppercase;
   position: absolute;
+  overflow-y: hidden;
 }

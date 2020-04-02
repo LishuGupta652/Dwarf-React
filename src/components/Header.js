@@ -11,7 +11,6 @@ gsap.registerPlugin(CSSPlugin);
 const Header = props => {
   const [isExpandable, setIsExpandable] = useState(false);
   const pageTitle = props.title;
-  console.log(isExpandable);
 
   const timeline = new TimelineMax();
   timeline.to("body", 0.2, { css: { visibility: "visible" } });
