@@ -20,6 +20,7 @@
 }
 .products .card {
   margin-top: 30px;
+  margin: 30px 10px;
   width: 300px;
   background-color: rgba(254, 178, 15, 0.5);
   color: #414141;

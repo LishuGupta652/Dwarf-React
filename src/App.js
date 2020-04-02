@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./App.css";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
@@ -14,24 +14,26 @@ import NotFound from "./pages/NotFound";
 // component
 import Footer from "./components/Footer";
 
-function App() {
-  return (
-    <>
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/contact/" component={Contact} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/images" component={Images} />
-          <Route exact path="/products" component={Product} />
-          <Route path="/dwarf/product/:id" component={Product} />
-          <Route component={NotFound} />
-        </Switch>
-      </BrowserRouter>
-      <div className="md-space" />
-      <Footer />
-    </>
-  );
+class App extends Component {
+  render() {
+    return (
+      <>
+        <BrowserRouter>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/contact/" component={Contact} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/images" component={Images} />
+            <Route exact path="/products" component={Product} />
+            <Route path="/dwarf/product/:id" component={Product} />
+            <Route component={NotFound} />
+          </Switch>
+        </BrowserRouter>
+        <div className="md-space" />
+        <Footer />
+      </>
+    );
+  }
 }
 
 export default App;
