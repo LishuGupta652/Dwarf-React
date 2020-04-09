@@ -1,20 +1,43 @@
 /* Contact us Contact us Contact us Contact us Contact us  */
 .contact {
   width: 90%;
-  margin: 50px auto;
+  margin: 40px auto;
   background-color: #f5f5f5;
   padding: 70px;
 }
 .contact-details h3 {
   color: #414141;
+  margin-top: 15px;
+  letter-spacing: 2px;
+}
+.contact-details span {
+  color: #212121;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+.contact-details .cd-cr {
+  color: #515151;
+  margin-top: 40px;
 }
 
 /* form form form form form form form */
+.cd-form {
+  margin: 80px 0;
+}
+.cd-from .ti {
+  width: 100%;
+  border: none;
+}
+.cd-form .button {
+  width: 100%;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
 .contactus-container {
   width: 90%;
   margin: 0 auto;
   margin-top: 100px;
-  display: flex;
 }
 form {
   flex: 2;

@@ -11,6 +11,10 @@ import ScrollAnimation from "react-animate-on-scroll";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Header title="Home" />

@@ -41,7 +41,7 @@
         widgetcode:
           "10945d185cfc392a4f1eb60063940d96d2eefa4479303a117650c014d05b36bd",
         values: {},
-        ready: function() {}
+        ready: function () {},
       };
       var d = document;
       s = d.createElement("script");
@@ -52,6 +52,20 @@
       t = d.getElementsByTagName("script")[0];
       t.parentNode.insertBefore(s, t);
       d.write("<div id='zsiqwidget'></div>");
+    </script>
+
+    <!-- unsubcribe from ZOHO -->
+    <script>
+      function emailValidate() {
+        var email = document.forms["unsubForm"]["email"].value;
+        document.forms["unsubForm"]["email"].value = email.trim();
+        var atpos = email.indexOf("@");
+        var dotpos = email.lastIndexOf(".");
+        if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email.length) {
+          alert("Please enter a valid email address.");
+          return false;
+        }
+      }
     </script>
   </body>
 </html>

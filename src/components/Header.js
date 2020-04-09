@@ -8,15 +8,15 @@ import { CSSPlugin } from "gsap/CSSPlugin";
 // Force CSSPlugin to not get dropped during build
 gsap.registerPlugin(CSSPlugin);
 
-const Header = props => {
+const Header = (props) => {
   const [isExpandable, setIsExpandable] = useState(false);
   const pageTitle = props.title;
 
   const timeline = new TimelineMax();
   timeline.to("body", 0.2, { css: { visibility: "visible" } });
 
-  useEffect(props => {
-    window.addEventListener("scroll", e => {
+  useEffect((props) => {
+    window.addEventListener("scroll", (e) => {
       // console.log(window.scrollY);
     });
 
@@ -51,12 +51,12 @@ const Header = props => {
       {
         width: "0px",
         padding: "0px",
-        overflow: "hidden"
+        overflow: "hidden",
       },
       {
         width: "30px",
         padding: "3px",
-        ease: "Power2.easeInOut"
+        ease: "Power2.easeInOut",
       },
       "-=.5"
     );
@@ -66,12 +66,12 @@ const Header = props => {
       {
         opacity: 0,
         x: "-10px",
-        overflow: "hidden"
+        overflow: "hidden",
       },
       {
         opacity: 1,
         x: "0px",
-        ease: "Power2.easeInOut"
+        ease: "Power2.easeInOut",
       },
       "-=.5"
     );
@@ -80,13 +80,13 @@ const Header = props => {
       0.35,
       {
         opacity: 0,
-        x: "-10px"
+        x: "-10px",
       },
       {
         opacity: 1,
         x: "0px",
         ease: "Power2.easeInOut",
-        stagger: 0.2
+        stagger: 0.2,
       }
     );
   };
@@ -110,13 +110,13 @@ const Header = props => {
       0.35,
       {
         opacity: 0,
-        x: "-10px"
+        x: "-10px",
       },
       {
         opacity: 1,
         x: "0px",
         ease: "Power2.easeInOut",
-        stagger: 0.2
+        stagger: 0.2,
       }
     );
   };
@@ -189,12 +189,12 @@ const Header = props => {
                   <h1>
                     <Typewriter
                       options={{
-                        strings: ["Dwarf", "By   You For You"],
+                        strings: ["Dwarf", "By You For You"],
                         autoStart: true,
                         loop: true,
                         delay: 100,
                         cursor: ".",
-                        start: 3000
+                        start: 3000,
                       }}
                     />
                   </h1>
@@ -228,7 +228,7 @@ const Header = props => {
             </div>
             <div className="linkedin social-stag">
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/company/dwarfx-pvt-ltd/"
                 target="_blank"
                 rel="noopener noreferrer"
               >

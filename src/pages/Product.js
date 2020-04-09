@@ -5,7 +5,11 @@ import Products from "../components/Products";
 // Context Imports
 import { ThemeContext } from "../context/ThemeContext";
 
-const Product = props => {
+const Product = (props) => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <Header title="Products" />
