@@ -1,0 +1,8 @@
+// netlify - dwarfx.ml 
+git add .
+git commit -m "commit"
+git push -u origin master
+
+// firebase - dwarf.co.in 
+npm run build 
+firebase deploy
