@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import Header from "../components/Header";
 import { ProductContext } from "../context/ProductContext";
+import Video from "../images/header/library.mp4";
+
 const SingleProduct = (props) => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
@@ -32,6 +34,10 @@ const SingleProduct = (props) => {
       >
         {currentProd.fields.title}
       </Header>
+      <div className="video-banner">
+        <video src={Video} autoPlay muted />
+      </div>
+
       <div className="sp">
         <h1>{currentProd.fields.title}</h1>
         <h3>{currentProd.fields.description}</h3>
