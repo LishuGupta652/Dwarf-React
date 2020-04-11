@@ -148,6 +148,11 @@ const Header = (props) => {
       backgroundColor: props.backgroundColor,
     };
   }
+  if (props.background) {
+    HeaderStyle = {
+      background: props.background,
+    };
+  }
 
   return (
     <>

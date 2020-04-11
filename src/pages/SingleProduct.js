@@ -26,7 +26,10 @@ const SingleProduct = (props) => {
 
   return (
     <div>
-      <Header title={currentProd.fields.title}>
+      <Header
+        title={currentProd.fields.title}
+        background="linear-gradient(to right, #70e1f5, #ffd194)"
+      >
         {currentProd.fields.title}
       </Header>
       <div className="sp">
