@@ -6,7 +6,6 @@ import { ProductContext } from "../context/ProductContext";
 
 const Products = () => {
   const [{ prod, loading }, dispatch] = React.useContext(ProductContext);
-  console.log(prod);
 
   if (loading) {
     return (
@@ -29,21 +28,23 @@ const Products = () => {
       {prod.map((product) => {
         return (
           <div key={product.sys.id}>
-            <div className="products">
-              <div className="card">
-                <div className="wrapper">
-                  <h3>
-                    {product.fields.title}
-                    <span>
-                      <i
-                        class="fa fa-arrow-circle-o-right"
-                        aria-hidden="true"
-                      ></i>
-                    </span>
-                  </h3>
+            <Link to={`/products/${product.fields.title}`}>
+              <div className="products">
+                <div className="card">
+                  <div className="wrapper">
+                    <h3>
+                      {product.fields.title}
+                      <span>
+                        <i
+                          class="fa fa-arrow-circle-o-right"
+                          aria-hidden="true"
+                        ></i>
+                      </span>
+                    </h3>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
         );
       })}

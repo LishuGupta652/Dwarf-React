@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Product from "./pages/Product";
 import Images from "./pages/Images";
 import NotFound from "./pages/NotFound";
+import SingleProduct from "./pages/SingleProduct";
 
 // component
 import Footer from "./components/Footer";
@@ -25,7 +26,7 @@ class App extends Component {
             <Route exact path="/about" component={About} />
             <Route exact path="/images" component={Images} />
             <Route exact path="/products" component={Product} />
-            <Route path="/dwarf/product/:id" component={Product} />
+            <Route path="/products/:id" component={SingleProduct} />
             <Route component={NotFound} />
           </Switch>
         </BrowserRouter>

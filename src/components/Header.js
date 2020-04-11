@@ -162,19 +162,29 @@ const Header = (props) => {
               <div>
                 <ul>
                   <Link to="/" onClick={() => setIsExpandable(false)}>
-                    <li className="nav-link-stag">Home</li>
+                    <li className="nav-link-stag">
+                      <i class="fa fa-home" aria-hidden="true"></i> Home
+                    </li>
                   </Link>
                   <Link to="/products/#" onClick={() => setIsExpandable(false)}>
-                    <li className="nav-link-stag">Products</li>
+                    <li className="nav-link-stag">
+                      <i class="fa fa-product-hunt"></i> Products
+                    </li>
                   </Link>
                   <Link to="/Images/#" onClick={() => setIsExpandable(false)}>
-                    <li className="nav-link-stag">Gallary</li>
+                    <li className="nav-link-stag">
+                      <i class="fa fa-camera"></i> Gallary
+                    </li>
                   </Link>
                   <Link to="/about/#" onClick={() => setIsExpandable(false)}>
-                    <li className="nav-link-stag">About</li>
+                    <li className="nav-link-stag">
+                      <i class="fa fa-info-circle"></i> About
+                    </li>
                   </Link>
                   <Link to="/contact/#" onClick={() => setIsExpandable(false)}>
-                    <li className="nav-link-stag">Contact</li>
+                    <li className="nav-link-stag">
+                      <i class="fa fa-envelope"></i> Contact
+                    </li>
                   </Link>
                 </ul>
               </div>
