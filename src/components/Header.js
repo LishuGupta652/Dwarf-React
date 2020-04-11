@@ -179,19 +179,19 @@ const Header = (props) => {
                       <i className="fa fa-home" aria-hidden="true"></i> Home
                     </li>
                   </Link>
+                  <Link to="/about/#" onClick={() => setIsExpandable(false)}>
+                    <li className="nav-link-stag">
+                      <i className="fa fa-info-circle"></i> About
+                    </li>
+                  </Link>
                   <Link to="/products/#" onClick={() => setIsExpandable(false)}>
                     <li className="nav-link-stag">
-                      <i className="fa fa-product-hunt"></i> Products
+                      <i className="fa fa-product-hunt"></i> Services
                     </li>
                   </Link>
                   <Link to="/Images/#" onClick={() => setIsExpandable(false)}>
                     <li className="nav-link-stag">
                       <i className="fa fa-camera"></i> Gallary
-                    </li>
-                  </Link>
-                  <Link to="/about/#" onClick={() => setIsExpandable(false)}>
-                    <li className="nav-link-stag">
-                      <i className="fa fa-info-circle"></i> About
                     </li>
                   </Link>
                   <Link to="/contact/#" onClick={() => setIsExpandable(false)}>
@@ -204,13 +204,7 @@ const Header = (props) => {
             </div>
           </div>
           <div className="content">
-            <div className="left">
-              {props.title !== "Home" ? (
-                <h1 className="title">{pageTitle}</h1>
-              ) : (
-                props.children
-              )}
-            </div>
+            <div className="left">{props.children}</div>
             <div className="right"></div>
           </div>
           <FixedItems />

@@ -13,8 +13,10 @@ const Product = (props) => {
     <div>
       <Header
         title="Products"
-        background="linear-gradient(to right, #9d50bb, #6e48aa)"
-      />
+        background="linear-gradient(to right, #ed4264, #ffedbc)"
+      >
+        <h1 className="title">Products</h1>
+      </Header>
       <Products />
     </div>
   );
