@@ -1,6 +1,7 @@
 {
   "short_name": "Dwarf",
   "name": "Building Smart India",
+  "description": "Dwarf. Incorporation is a organization which is operating in the field of Construction, Fabrication, Smart Gardens, Smart Library, Smart parking Solutions and various other smart city goals. ",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +21,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#FEB20F",
+  "background_color": "#e87c1e"
 }
