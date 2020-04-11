@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import Header from "../components/Header";
 import { ProductContext } from "../context/ProductContext";
 const SingleProduct = (props) => {
@@ -26,7 +26,9 @@ const SingleProduct = (props) => {
 
   return (
     <div>
-      <Header title={currentProd.fields.title} />
+      <Header title={currentProd.fields.title}>
+        {currentProd.fields.title}
+      </Header>
       <div className="sp">
         <h1>{currentProd.fields.title}</h1>
         <h3>{currentProd.fields.description}</h3>

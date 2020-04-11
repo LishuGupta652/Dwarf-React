@@ -1,9 +1,8 @@
-import React, { useContext } from "react";
+import React from "react";
 import Header from "../components/Header";
 import Products from "../components/Products";
 
 // Context Imports
-import { ThemeContext } from "../context/ThemeContext";
 
 const Product = (props) => {
   React.useEffect(() => {

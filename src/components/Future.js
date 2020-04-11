@@ -1,8 +1,4 @@
 import React from "react";
-import Product from "../pages/Product";
-import { Link } from "react-router-dom";
-import { showcase1 } from "../images/showcase_1.jpg";
-import Fade from "react-reveal/Fade";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const Future = () => {

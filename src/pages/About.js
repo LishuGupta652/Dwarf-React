@@ -10,7 +10,9 @@ const About = () => {
 
   return (
     <>
-      <Header title="About Us" />
+      <Header title="About Us">
+        <h1 className="title">About</h1>
+      </Header>
       <WhoAreWe />
       <AboutInfo />
     </>

@@ -4,7 +4,7 @@ import BannerImg from "../images/method.png";
 const Method = () => {
   return (
     <>
-      <div class="method ">
+      <div className="method ">
         <div className="method-container">
           <div className="flex">
             <div className="flex-left">

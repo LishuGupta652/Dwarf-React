@@ -10,7 +10,9 @@ const Images = () => {
 
   return (
     <>
-      <Header title="Images" />
+      <Header title="Images">
+        <h1 className="title">Images</h1>
+      </Header>
       <div className="lg-space" />
       <Gallary />
     </>

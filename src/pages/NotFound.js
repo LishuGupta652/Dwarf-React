@@ -8,7 +8,9 @@ const NotFound = () => {
 
   return (
     <div>
-      <Header title="Opps! 404 Not Found" />
+      <Header title="Opps! 404 Not Found">
+        <h1 className="title">Opps! 404 Not Found</h1>
+      </Header>
     </div>
   );
 };
