@@ -155,7 +155,8 @@
 #table-dc {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+
+  overflow-x: auto;
 }
 
 #table-dc td,

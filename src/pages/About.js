@@ -10,11 +10,8 @@ const About = () => {
 
   return (
     <>
-      <Header
-        title="About Us"
-        background="linear-gradient(to right, #de6262, #ffb88c)"
-      >
-        <h1 className="title">About</h1>
+      <Header title="About Us" backgroundImage="about.jpg">
+        <h1 className="title">About Us</h1>
       </Header>
       <WhoAreWe />
       <AboutInfo />

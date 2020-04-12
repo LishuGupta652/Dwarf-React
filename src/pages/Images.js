@@ -10,10 +10,7 @@ const Images = () => {
 
   return (
     <>
-      <Header
-        title="Images"
-        background="linear-gradient(to right, #ff4e50, #f9d423)"
-      >
+      <Header title="Images" backgroundImage="gallary.jpg">
         <h1 className="title">Images</h1>
       </Header>
       <div className="lg-space" />

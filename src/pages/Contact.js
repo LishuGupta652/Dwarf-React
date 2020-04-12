@@ -8,10 +8,7 @@ const Contact = () => {
 
   return (
     <>
-      <Header
-        title="Contact Us"
-        background="linear-gradient(to right, #606c88, #3f4c6b)"
-      >
+      <Header title="Contact Us" backgroundImage="contact.jpg">
         <h1 className="title">Contact</h1>
       </Header>
       <ContactForm />

@@ -1,11 +1,12 @@
 import React from "react";
 import Header from "../Header";
+import { Link } from "react-router-dom";
 
 const SmartLibrary = () => {
   return (
     <div>
-      <Header>
-        <h1>Smart Libaray</h1>
+      <Header backgroundColor="#58B19F">
+        <h1 className="text-black">Smart Library</h1>
       </Header>
 
       <div className="content-wrapper">
@@ -132,6 +133,46 @@ const SmartLibrary = () => {
           </ul>
         </section>
       </div>
+
+      <section>
+        <div className="content-wrapper">
+          <h1>OTHER SERVICES </h1>
+        </div>
+        <Link to="/products/digital_classes">
+          <div className="products">
+            <div className="card">
+              <div className="wrapper">
+                <h3>
+                  Digital Classes
+                  <span>
+                    <i
+                      className="fa fa-arrow-circle-o-right"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </Link>
+        <Link to="/products/health_center">
+          <div className="products">
+            <div className="card">
+              <div className="wrapper">
+                <h3>
+                  Health Center
+                  <span>
+                    <i
+                      className="fa fa-arrow-circle-o-right"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </Link>
+      </section>
     </div>
   );
 };

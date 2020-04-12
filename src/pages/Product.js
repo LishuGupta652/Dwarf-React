@@ -11,11 +11,8 @@ const Product = (props) => {
 
   return (
     <div>
-      <Header
-        title="Services"
-        background="linear-gradient(to right, #ed4264, #ffedbc)"
-      >
-        <h1 className="title">Services</h1>
+      <Header title="Services" backgroundImage="services.jpg">
+        <h1 className="title text-black">Services</h1>
       </Header>
       <Services />
     </div>
