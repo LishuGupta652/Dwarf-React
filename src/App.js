@@ -15,7 +15,15 @@ import SingleProduct from "./pages/SingleProduct";
 // component
 import Footer from "./components/Footer";
 
+// Time line Max
+import { TimelineMax } from "gsap";
+
 class App extends Component {
+  componentDidMount() {
+    const timeline = new TimelineMax();
+    timeline.to("body", 0.2, { css: { visibility: "visible" } });
+  }
+
   render() {
     return (
       <>

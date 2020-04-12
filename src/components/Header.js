@@ -16,9 +16,8 @@ const Header = (props) => {
   const [isExpandable, setIsExpandable] = useState(false);
 
   const timeline = new TimelineMax();
-  timeline.to("body", 0.2, { css: { visibility: "visible" } });
 
-  useEffect((props) => {
+  useEffect(() => {
     pageTitle === "Home" ? homePageAnimation() : otherPageAnimations();
   }, []);
 
