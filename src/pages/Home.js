@@ -8,7 +8,6 @@ import WhoAreWe from "../components/AboutPage/WhoAreWe";
 import Mission from "../components/Mission";
 import Future from "../components/Future";
 import Method from "../components/Method";
-import Products from "../components/Products";
 
 import { Link } from "react-router-dom";
 
@@ -49,7 +48,6 @@ const Home = () => {
 
       <div className="md-space" />
       <Future />
-      <div className="lg-space" />
       <Method />
 
       <div className="heading ex-vp">

@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
-import Products from "../components/Products";
+import Services from "../components/Services";
 
 // Context Imports
 
@@ -12,12 +12,12 @@ const Product = (props) => {
   return (
     <div>
       <Header
-        title="Products"
+        title="Services"
         background="linear-gradient(to right, #ed4264, #ffedbc)"
       >
-        <h1 className="title">Products</h1>
+        <h1 className="title">Services</h1>
       </Header>
-      <Products />
+      <Services />
     </div>
   );
 };

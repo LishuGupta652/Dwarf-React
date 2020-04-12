@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 //Context API
-const Products = () => {
+const Services = () => {
   return (
     <>
       <Link to="/products/smart_library">
@@ -61,4 +61,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default Services;

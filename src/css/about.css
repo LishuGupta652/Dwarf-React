@@ -55,7 +55,18 @@
   margin: 100px auto;
   padding: 70px;
   background-color: #f5f5f5;
+  color: #232323;
 }
 .ab-ser-wra {
   margin: 70px 0 0 0;
+}
+
+@media (max-width: 700px) {
+  .ai-container {
+    margin: 50px auto;
+    padding: 10px;
+  }
+  .ab-ser-wra {
+    margin: 50px 0 0 0;
+  }
 }

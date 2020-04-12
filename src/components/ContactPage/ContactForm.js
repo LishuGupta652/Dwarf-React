@@ -44,9 +44,8 @@ const ContactForm = () => {
               Delhi | Madhya Pradesh
             </div>
           </h3>
-          <h3 className="cd-cr">Copyright © 2020 Dwarf. All Rights Reserved</h3>
         </div>
-
+        {/* 
         <form className="cd-form">
           <form
             action="https://crm.zoho.in/crm/Unsubscribe?encoding=UTF-8"
@@ -72,7 +71,7 @@ const ContactForm = () => {
             />
             <input type="submit" value="Unsubscribe" className="button" />
           </form>
-        </form>
+        </form> */}
       </div>
     </div>
   );
