@@ -10,12 +10,13 @@
 .contactus-container {
   width: 90%;
   margin: 0;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .contact-details h3 {
   color: #414141;
   margin-top: 15px;
   letter-spacing: 2px;
+  font-family: "Poppins";
 }
 .contact-details span {
   color: #212121;
@@ -29,6 +30,7 @@
 
 @media (max-width: 700px) {
   .contact {
+    width: 95%;
     padding: 10px;
   }
 }

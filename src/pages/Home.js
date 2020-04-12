@@ -52,7 +52,7 @@ const Home = () => {
 
       <div className="heading ex-vp">
         <Link to="/products">
-          <h1>View Products</h1>
+          <h1>View Services</h1>
           <i className="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
         </Link>
       </div>
