@@ -17,12 +17,15 @@ const SingleProduct = (props) => {
   console.log(product);
 
   if (product === "smart_library") {
+    window.scrollTo(0, 0);
     return <SmartLibrary />;
   }
   if (product === "digital_classes") {
+    window.scrollTo(0, 0);
     return <DigitalClasses />;
   }
   if (product === "health_center") {
+    window.scrollTo(0, 0);
     return <HealthCenter />;
   }
 };

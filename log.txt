@@ -6,3 +6,15 @@ git push -u origin master
 // firebase - dwarf.co.in 
 npm run build 
 firebase deploy
+
+## Hosting 
+### Firebase 151.101.1.195 151.101.65.195
+
+## domain 
+### godaddy
+
+## hosting 
+### hosting.com 
+
+## Emails 
+### admin@dwarf.co.in  admin@dwarf.co.in
