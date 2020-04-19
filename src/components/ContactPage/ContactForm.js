@@ -22,23 +22,29 @@ const ContactForm = () => {
           <button type="submit">Submit</button>
         </form> */}
         <div className="contact-details">
-          <h1>For more please Contact Us</h1>
           <h3>
-            <span>Email :</span> comm.dwarf@gmail.com
+            <span className="text-green">Email </span> <br />
+            comm.dwarf@gmail.com
           </h3>
+          <br />
           <h3>
-            <span>Sales and Support :</span> 7415626643
+            <span className="text-green">Sales and Support </span> <br />
+            7415626643
           </h3>
+          <br />
           <h3>
-            <span style={{ color: "green" }}>Address : </span>
+            <span className="text-green">Address </span>
             <br />
-            <ol style={{ marginLeft: "50px" }}>
-              <li>
+            <div>
+              <i className="fa fa-university" aria-hidden="true"></i>
+              <div>
                 3rd Row, Jaunapuriya House, Chattarpur, South Delhi, 110047
                 India
-              </li>
-              <li>A-83 Anand Nagar, Gwalior, Madhya Pradesh 474012</li>
-            </ol>
+              </div>
+              <br />
+              <i className="fa fa-university" aria-hidden="true"></i>
+              <div>A-83 Anand Nagar, Gwalior, Madhya Pradesh 474012</div>
+            </div>
             <br />
             <br />
             <div

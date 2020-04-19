@@ -10,6 +10,7 @@ import Future from "../components/Future";
 import Method from "../components/Method";
 
 import { Link } from "react-router-dom";
+import Quote from "../components/Quote";
 
 const Home = () => {
   React.useEffect(() => {
@@ -38,6 +39,8 @@ const Home = () => {
           </h2>
         </div>
       </Header>
+
+      <Quote />
 
       <ScrollAnimation animateOnce animateIn="fadeIn">
         <WhoAreWe />

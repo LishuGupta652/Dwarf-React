@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Header";
 import { Link } from "react-router-dom";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const DigitalClasses = () => {
   return (
@@ -25,32 +26,37 @@ const DigitalClasses = () => {
           </a>
         </ol>
       </Header>
+
       <div className="content-wrapper" id="What_are_digital">
         <section>
           <h1>What are Digital Classrooms?</h1>
-          <p>
-            The Digital classroom is a "Technology-enabled" learning environment
-            where Student learning and Interaction with the Teacher and Peers is
-            fully supported through strategic use of Information and
-            Communication Technology (ICT). Some of the core benefits of the
-            Digital Classroom Solutions are as follows:
-          </p>
+          <ScrollAnimation animateIn="fadeIn">
+            <p>
+              The Digital classroom is a "Technology-enabled" learning
+              environment where Student learning and Interaction with the
+              Teacher and Peers is fully supported through strategic use of
+              Information and Communication Technology (ICT). Some of the core
+              benefits of the Digital Classroom Solutions are as follows:
+            </p>
+          </ScrollAnimation>
           <ul>
-            <section>
-              <li>Empower Teachers and Students using Modern ICT tools</li>
-              <li>
-                Developing future skills in students such as critical thinking,
-                creativity and communication
-              </li>
-              <li>
-                Creating a unique platform for Teachers to think out of the box
-                and built concept development skills
-              </li>
-              <li>
-                Stimulate mind of Students to explore and understand real life
-                application of Math’s, Science and other subject concepts.
-              </li>
-            </section>
+            <ScrollAnimation animateIn="fadeIn">
+              <section>
+                <li>Empower Teachers and Students using Modern ICT tools</li>
+                <li>
+                  Developing future skills in students such as critical
+                  thinking, creativity and communication
+                </li>
+                <li>
+                  Creating a unique platform for Teachers to think out of the
+                  box and built concept development skills
+                </li>
+                <li>
+                  Stimulate mind of Students to explore and understand real life
+                  application of Math’s, Science and other subject concepts.
+                </li>
+              </section>
+            </ScrollAnimation>
           </ul>
         </section>
       </div>

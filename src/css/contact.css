@@ -16,14 +16,17 @@
   color: #414141;
   margin-top: 15px;
   font-family: "Poppins";
+  align-items: center;
+  text-align: center;
 }
 .contact-details span {
   color: #212121;
   font-size: 22px;
 }
-.contact-details .cd-cr {
-  color: #515151;
-  margin-top: 40px;
+.contact-details i {
+  font-size: 32px;
+  margin-top: 20px;
+  color: rgb(41, 210, 20);
 }
 
 @media (max-width: 700px) {

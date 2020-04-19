@@ -591,3 +591,6 @@ ul {
 .text-black {
   color: #212121 !important;
 }
+.text-green {
+  color: rgb(41, 230, 20) !important;
+}
