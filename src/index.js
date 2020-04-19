@@ -16,7 +16,9 @@ import { ProductProvider } from "./context/ProductContext";
 ReactDOM.render(
   <ThemeProvider>
     <ProductProvider>
-      <div className="production">In production App</div>
+      <marquee className="production" scrollamount="12">
+        In production App
+      </marquee>
       <App />
     </ProductProvider>
   </ThemeProvider>,

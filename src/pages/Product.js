@@ -1,8 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Services from "../components/Services";
-
-// Context Imports
+import TypewriterEffect from "../components/TypewriterEffect";
 
 const Product = (props) => {
   React.useEffect(() => {
@@ -12,7 +11,9 @@ const Product = (props) => {
   return (
     <div>
       <Header title="Services" backgroundImage="services.jpg">
-        <h1 className="title text-black">Services</h1>
+        <h1 className="title text-black">
+          <TypewriterEffect title="Services" />
+        </h1>
       </Header>
       <Services />
     </div>

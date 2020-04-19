@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Image from "../components/Image";
 import Gallary from "../components/Gallary";
+import TypewriterEffect from "../components/TypewriterEffect";
 
 const Images = () => {
   React.useEffect(() => {
@@ -11,7 +12,7 @@ const Images = () => {
   return (
     <>
       <Header title="Images" backgroundImage="gallary.jpg">
-        <h1 className="title">Images</h1>
+        <TypewriterEffect title="Images" />
       </Header>
       <div className="lg-space" />
       <Gallary />

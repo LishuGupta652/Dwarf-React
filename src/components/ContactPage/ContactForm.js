@@ -30,10 +30,16 @@ const ContactForm = () => {
             <span>Sales and Support :</span> 7415626643
           </h3>
           <h3>
-            <span>Address : </span>
-            3rd Row, Jaunapuriya House, Chattarpur, South Delhi, 110047 India
+            <span style={{ color: "green" }}>Address : </span>
             <br />
-            A-83 Anand Nagar, Gwalior, Madhya Pradesh 474012
+            <ol style={{ marginLeft: "50px" }}>
+              <li>
+                3rd Row, Jaunapuriya House, Chattarpur, South Delhi, 110047
+                India
+              </li>
+              <li>A-83 Anand Nagar, Gwalior, Madhya Pradesh 474012</li>
+            </ol>
+            <br />
             <br />
             <div
               style={{

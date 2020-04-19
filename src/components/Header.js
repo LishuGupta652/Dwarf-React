@@ -118,7 +118,7 @@ const Header = (props) => {
 
     timeline.fromTo(
       ".nav-open",
-      0.8,
+      0.5,
       { x: "-100vw" },
       { x: "0vw", ease: "Power2.easeInOut" }
     );
@@ -164,7 +164,7 @@ const Header = (props) => {
               </Link>
             </nav>
             <div className="fixed-nav" onClick={expandNavWithAnim}>
-              <div className="bar">
+              <div className={`bar ${isExpandable ? "bar-active" : ""} `}>
                 <div className="fa-line"></div>
                 <div className="fa-line"></div>
                 <div className="fa-line"></div>
@@ -185,7 +185,7 @@ const Header = (props) => {
                   </Link>
                   <Link to="/products/#" onClick={() => setIsExpandable(false)}>
                     <li className="nav-link-stag">
-                      <i className="fa fa-product-hunt"></i> Services
+                      <i className="fa fa-cogs"></i> Services
                     </li>
                   </Link>
                   <Link to="/Images/#" onClick={() => setIsExpandable(false)}>

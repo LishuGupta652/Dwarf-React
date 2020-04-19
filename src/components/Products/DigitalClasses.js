@@ -5,10 +5,27 @@ import { Link } from "react-router-dom";
 const DigitalClasses = () => {
   return (
     <div>
-      <Header backgroundColor="#58B19F">
+      <Header backgroundColor="#60a3bc">
         <h1 className="text-black">Digital Classes</h1>
+        <ol className="head-list">
+          <a href="#What_are_digital">
+            <li>What are DigitalClasses ?</li>
+          </a>
+          <a href="#Outcomes">
+            <li>Outcome for the Educator and Learner.</li>
+          </a>
+          <a href="#Tools">
+            <li>Portable Interactive tools</li>
+          </a>
+          <a href="#Implementation">
+            <li>Implementation Methodology</li>
+          </a>
+          <a href="#Way_forward">
+            <li>Way Forward</li>
+          </a>
+        </ol>
       </Header>
-      <div className="content-wrapper">
+      <div className="content-wrapper" id="What_are_digital">
         <section>
           <h1>What are Digital Classrooms?</h1>
           <p>
@@ -45,7 +62,7 @@ const DigitalClasses = () => {
         />
       </div>
 
-      <div className="content-wrapper">
+      <div className="content-wrapper" id="Outcomes">
         <section>
           <h1>Outcome for the Educator and Learner.</h1>
 
@@ -82,7 +99,7 @@ const DigitalClasses = () => {
         </section>
       </div>
 
-      <div className="content-wrapper">
+      <div className="content-wrapper" id="Tools">
         <section>
           <h1>Portable Interactive tools </h1>
           <p>
@@ -104,7 +121,7 @@ const DigitalClasses = () => {
         </section>
       </div>
 
-      <div className="content-wrapper">
+      <div className="content-wrapper" id="Implementation">
         <section>
           <h1>Implementation Methodology </h1>
           <section>
@@ -138,7 +155,7 @@ const DigitalClasses = () => {
         </section>
       </div>
 
-      <div className="content-wrapper">
+      <div className="content-wrapper" id="Way_forward">
         <section>
           <h1>Way Forward</h1>
           <section>

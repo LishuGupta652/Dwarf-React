@@ -7,9 +7,23 @@ const SmartLibrary = () => {
     <div>
       <Header backgroundColor="#58B19F">
         <h1 className="text-black">Smart Library</h1>
+        <ol className="head-list">
+          <a href="#intro">
+            <li>Introduction of Digital Library?</li>
+          </a>
+          <a href="#meaning_and_nature">
+            <li>Digital library: Meaning and Nature</li>
+          </a>
+          <a href="#characterstics">
+            <li>Characterstics of digital libraries </li>
+          </a>
+          <a href="#managing_content">
+            <li>Managing Digital library content</li>
+          </a>
+        </ol>
       </Header>
 
-      <div className="content-wrapper">
+      <div className="content-wrapper" id="intro">
         <section>
           <h1>Introduction of Digital Library?</h1>
           <p>
@@ -45,7 +59,7 @@ const SmartLibrary = () => {
         />
       </div>
 
-      <div className="content-wrapper">
+      <div className="content-wrapper" id="meaning_and_nature">
         <section>
           <h1>DIGITAL LIBRARY: MEANING AND NATURE</h1>
           <p>
@@ -74,7 +88,7 @@ const SmartLibrary = () => {
         />
       </div>
 
-      <div className="content-wrapper">
+      <div className="content-wrapper" id="characterstics">
         <section>
           <h1>CHARACTERSTICS OF DIGITAL LIBRARIES </h1>
           <p>
@@ -89,19 +103,21 @@ const SmartLibrary = () => {
             follows:
           </p>
           <ul>
-            <li>the digital library is not a single entity</li>
-            <li>
-              the digital library requires networking technology to connect many
-              entities
-            </li>
-            <li>all linkages are transparent to end users</li>
-            <li>
-              universal access to digital content and information is a goal
-            </li>
-            <li>
-              digital library collections are not limited to documents
-              surrogates
-            </li>
+            <section>
+              <li>the digital library is not a single entity</li>
+              <li>
+                the digital library requires networking technology to connect
+                many entities
+              </li>
+              <li>all linkages are transparent to end users</li>
+              <li>
+                universal access to digital content and information is a goal
+              </li>
+              <li>
+                digital library collections are not limited to documents
+                surrogates
+              </li>
+            </section>
           </ul>
         </section>
       </div>
@@ -113,7 +129,7 @@ const SmartLibrary = () => {
         />
       </div>
 
-      <div className="content-wrapper">
+      <div className="content-wrapper" id="managing_content">
         <section>
           <h1>MANAGING DIGITAL LIBRARY CONTENT</h1>
           <p>
@@ -123,13 +139,16 @@ const SmartLibrary = () => {
             of digital library services, especially when technical resources are
             limited. Content management includes the following key functions
           </p>
+
           <ul>
-            <li>Selection and acquisition</li>
-            <li>Indexing</li>
-            <li>Indexing</li>
-            <li>Retrieval</li>
-            <li>Maintenance</li>
-            <li>Maintenance</li>
+            <section>
+              <li>Selection and acquisition</li>
+              <li>Indexing</li>
+              <li>Indexing</li>
+              <li>Retrieval</li>
+              <li>Maintenance</li>
+              <li>Maintenance</li>
+            </section>
           </ul>
         </section>
       </div>

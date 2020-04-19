@@ -137,9 +137,26 @@ header {
   margin: 5px 0px;
   background-color: var(--primary-font-color);
   position: relative;
+  transition: 0.4s ease-in-out;
 }
+
 .bar div:nth-child(2) {
   width: 20px;
+}
+.bar-active div {
+  border-radius: 5px;
+  color: #313131;
+}
+.bar-active div:nth-child(1) {
+  transform: rotateZ(30deg);
+  transform: translate(0, 8px) rotateZ(45deg);
+}
+.bar-active div:nth-child(2) {
+  transform: translate(-30px) scale(0);
+}
+.bar-active div:nth-child(3) {
+  transform: rotateZ(-45deg);
+  transform: translate(0, -8px) rotateZ(-45deg);
 }
 
 nav {

@@ -7,6 +7,9 @@ import Video from "../images/header/library.mp4";
 import SmartLibrary from "../components/Products/SmartLibrary";
 import DigitalClasses from "../components/Products/DigitalClasses";
 import HealthCenter from "../components/Products/HealthCenter";
+import NotFound from "./NotFound.js";
+
+import Typewriter from "typewriter-effect";
 
 const SingleProduct = (props) => {
   React.useEffect(() => {
@@ -28,6 +31,7 @@ const SingleProduct = (props) => {
     window.scrollTo(0, 0);
     return <HealthCenter />;
   }
+  return <NotFound />;
 };
 
 export default SingleProduct;

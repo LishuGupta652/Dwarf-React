@@ -5,11 +5,25 @@ import { Link } from "react-router-dom";
 const HealthCenter = () => {
   return (
     <div>
-      <Header backgroundColor="#58B19F">
+      <Header backgroundColor="#78e08f">
         <h1 className="text-black">Health Center</h1>
+        <ol className="head-list">
+          <a href="#intro">
+            <li>What are PHC ?</li>
+          </a>
+          <a href="#Overview">
+            <li>Overview</li>
+          </a>
+          <a href="#Moving_toward_PHC">
+            <li>Moving Toward PHC </li>
+          </a>
+          <a href="#health_promotions">
+            <li>What are health Promotions</li>
+          </a>
+        </ol>
       </Header>
 
-      <div className="content-wrapper">
+      <div className="content-wrapper" id="intro">
         <section>
           <h1>What are PHC ?</h1>
           <p>
@@ -31,7 +45,7 @@ const HealthCenter = () => {
         />
       </div>
 
-      <div className="content-wrapper">
+      <div className="content-wrapper" id="Overview">
         <section>
           <h1>Overview </h1>
           <p>
@@ -66,7 +80,7 @@ const HealthCenter = () => {
         <img src={require("../../images/products/quote1.jpeg")} alt="Achieve" />
       </div>
 
-      <div className="content-wrapper">
+      <div className="content-wrapper" id="Moving_toward_PHC">
         <section>
           <h1>Moving Toward PHC </h1>
           <p>
@@ -96,7 +110,7 @@ const HealthCenter = () => {
         <img src={require("../../images/products/quote2.jpeg")} alt="Achieve" />
       </div>
 
-      <div className="content-wrapper">
+      <div className="content-wrapper" id="health_promotions">
         <section>
           <h1>What are health Promotions </h1>
           <p>

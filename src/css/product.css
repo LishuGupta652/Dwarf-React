@@ -19,16 +19,20 @@
   transition: 300ms ease-out;
 }
 .products .card {
-  margin-top: 30px;
-  margin: 30px 10px;
+  margin: 10px 10px;
   width: 90%;
-  background-color: rgba(254, 178, 15, 0.5);
-  color: #414141;
+  background-color: #fa983a;
+  color: white;
   text-transform: uppercase;
-  min-height: 400px;
+  min-height: 300px;
   border-radius: 2px;
   position: relative;
   box-shadow: 1px 0px 3px 2px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 700px) {
+  .products .card {
+    min-height: 100px;
+  }
 }
 .products .card:hover {
   box-shadow: 2px 0px 3px 2px rgba(0, 0, 0, 0.15);
@@ -41,7 +45,7 @@
 .products .card .wrapper::before {
   content: "";
   width: 100%;
-  height: 400px;
+  /* min-height: 400px; */
   background-color: rgba(80, 80, 80, 0.08);
   display: block;
   clip-path: circle(10% at 100% 0%);
@@ -62,10 +66,10 @@
   font-size: 80px;
   transition: 0.3s ease-out;
 }
-
+/* 
 .products .card:hover .wrapper::after {
   top: 200px;
-}
+} */
 .products h3 {
   position: absolute;
   top: 70%;
@@ -95,7 +99,20 @@
   }
 }
 
-/* single product  */
+/* single product single product single product single product -------------------------
+    single product single product single product single product ------------------------ */
+
+.head-list {
+  margin-top: 30px;
+}
+.head-list li {
+  font-size: 22px;
+  color: #414141;
+  cursor: pointer;
+  margin: 10px 50px;
+  line-height: initial;
+}
+
 .sp {
   width: 90%;
   margin: 50px auto;
@@ -116,6 +133,9 @@
   border-radius: 5px;
   font-size: 18px;
 }
+.content-wrapper h1 {
+  color: #d63031;
+}
 .content-wrapper section {
   margin: 30px 0;
 }
@@ -133,7 +153,7 @@
 }
 .content-image .q-connect {
   width: 100%;
-  max-height: 600px;
+  max-height: 400px;
 }
 .content-image video {
   width: 100%;

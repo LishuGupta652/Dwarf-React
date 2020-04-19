@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import WhoAreWe from "../components/AboutPage/WhoAreWe";
 import AboutInfo from "../components/AboutPage/AboutInfo";
+import TypewriterEffect from "../components/TypewriterEffect";
 
 const About = () => {
   React.useEffect(() => {
@@ -11,7 +12,7 @@ const About = () => {
   return (
     <>
       <Header title="About Us" backgroundImage="about.jpg">
-        <h1 className="title">About Us</h1>
+        <TypewriterEffect title="About" />
       </Header>
       <WhoAreWe />
       <AboutInfo />
