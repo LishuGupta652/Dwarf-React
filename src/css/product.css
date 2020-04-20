@@ -8,96 +8,6 @@
 
 /* products products products products products products 
 ----------------------------------------------- */
-.products {
-  display: flex;
-  flex-wrap: wrap;
-  overflow: hidden;
-  justify-content: space-evenly;
-  margin-top: 30px;
-}
-.products * {
-  transition: 300ms ease-out;
-}
-.products .card {
-  margin: 10px 10px;
-  width: 90%;
-  background-color: #fa983a;
-  color: white;
-  text-transform: uppercase;
-  min-height: 300px;
-  border-radius: 2px;
-  position: relative;
-  box-shadow: 1px 0px 3px 2px rgba(0, 0, 0, 0.05);
-}
-@media (max-width: 700px) {
-  .products .card {
-    min-height: 100px;
-  }
-}
-.products .card:hover {
-  box-shadow: 2px 0px 3px 2px rgba(0, 0, 0, 0.15);
-}
-.products .card .wrapper {
-  width: 100%;
-  height: 100%;
-}
-
-.products .card .wrapper::before {
-  content: "";
-  width: 100%;
-  /* min-height: 400px; */
-  background-color: rgba(80, 80, 80, 0.08);
-  display: block;
-  clip-path: circle(10% at 100% 0%);
-  transition: 300ms ease-out;
-}
-
-.products .card:hover .wrapper::before {
-  clip-path: circle(150% at 100% 0%);
-}
-
-.products .card .wrapper::after {
-  content: "DWARF";
-  position: absolute;
-  top: 100px;
-  width: 300px;
-  height: 400px;
-  color: rgba(255, 255, 255, 0.2);
-  font-size: 80px;
-  transition: 0.3s ease-out;
-}
-/* 
-.products .card:hover .wrapper::after {
-  top: 200px;
-} */
-.products h3 {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 40px;
-  transition: 0.3s ease-out;
-}
-.products span {
-  margin-left: 10px;
-}
-.products .card .wrapper:hover h3 {
-  top: 50%;
-  left: 50%;
-}
-
-.products span i {
-  transition: 0.3s ease-out;
-}
-
-@media (max-width: 700px) {
-  .products .card .wrapper::after {
-    font-size: 40px;
-  }
-  .products h3 {
-    font-size: 22px;
-  }
-}
 
 /* single product single product single product single product -------------------------
     single product single product single product single product ------------------------ */
@@ -142,9 +52,15 @@
 .content-wrapper ul {
   margin: 0;
 }
+.content-wrapper p {
+  font-size: 18px;
+}
 .content-wrapper ol li,
 .content-wrapper ul li {
   font-weight: bold;
+  font-size: 16px;
+  list-style: circle;
+  margin-left: 40px;
 }
 
 .content-image {
@@ -168,6 +84,10 @@
   .content-image {
     width: 100%;
     height: 200px;
+  }
+
+  .content-wrapper p {
+    font-size: 16px;
   }
 }
 
