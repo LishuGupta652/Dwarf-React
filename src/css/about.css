@@ -32,6 +32,7 @@
   .wwe-head {
     font-size: 2rem;
     height: 200px;
+    background-image: none;
   }
   .wwe-content {
     padding: 5px 10px;

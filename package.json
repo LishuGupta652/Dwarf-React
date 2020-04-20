@@ -16,6 +16,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
     "react-scrollmagic": "^2.1.1",
+    "react-transition-group": "^4.3.0",
     "scroll-data-hook": "^1.0.1",
     "typewriter-effect": "^2.12.2"
   },
