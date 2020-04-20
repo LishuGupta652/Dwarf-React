@@ -180,40 +180,20 @@ const SmartLibrary = () => {
         <div className="content-wrapper">
           <h1>OTHER SERVICES </h1>
         </div>
-        <Link to="/products/digital_classes">
-          <div className="products">
-            <div className="card">
-              <div className="wrapper">
-                <h3>
-                  Digital Classes
-                  <span>
-                    <i
-                      className="fa fa-arrow-circle-o-right"
-                      aria-hidden="true"
-                    ></i>
-                  </span>
-                </h3>
-              </div>
+        <div className="sp-container">
+          <Link to="/products/digital_classes">
+            <div className="sp-card background-second">
+              <h1>Digital Classes</h1>
             </div>
-          </div>
-        </Link>
-        <Link to="/products/health_center">
-          <div className="products">
-            <div className="card">
-              <div className="wrapper">
-                <h3>
-                  Health Center
-                  <span>
-                    <i
-                      className="fa fa-arrow-circle-o-right"
-                      aria-hidden="true"
-                    ></i>
-                  </span>
-                </h3>
-              </div>
+          </Link>
+        </div>
+        <div className="sp-container ">
+          <Link to="/products/health_center">
+            <div className="sp-card background-third">
+              <h1>Health Center</h1>
             </div>
-          </div>
-        </Link>
+          </Link>
+        </div>
       </section>
     </div>
   );

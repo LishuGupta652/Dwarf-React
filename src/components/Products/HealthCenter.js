@@ -210,45 +210,25 @@ const HealthCenter = () => {
           </ol>
         </section>
       </div>
-
       <section>
         <div className="content-wrapper">
           <h1>OTHER SERVICES </h1>
         </div>
-        <Link to="/products/digital_classes">
-          <div className="products">
-            <div className="card">
-              <div className="wrapper">
-                <h3>
-                  Digital Classes
-                  <span>
-                    <i
-                      className="fa fa-arrow-circle-o-right"
-                      aria-hidden="true"
-                    ></i>
-                  </span>
-                </h3>
-              </div>
+
+        <div className="sp-container">
+          <Link to="/products/smart_library">
+            <div className="sp-card">
+              <h1>Smart Library</h1>
             </div>
-          </div>
-        </Link>
-        <Link to="/products/smart_library">
-          <div className="products">
-            <div className="card">
-              <div className="wrapper">
-                <h3>
-                  Smart Library
-                  <span>
-                    <i
-                      className="fa fa-arrow-circle-o-right"
-                      aria-hidden="true"
-                    ></i>
-                  </span>
-                </h3>
-              </div>
+          </Link>
+        </div>
+        <div className="sp-container">
+          <Link to="/products/digital_classes">
+            <div className="sp-card background-second">
+              <h1>Digital Classes</h1>
             </div>
-          </div>
-        </Link>
+          </Link>
+        </div>
       </section>
     </div>
   );

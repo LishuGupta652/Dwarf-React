@@ -11,6 +11,7 @@ import Method from "../components/Method";
 
 import { Link } from "react-router-dom";
 import Quote from "../components/Quote";
+import { Slider } from "../components/Slider";
 
 const Home = () => {
   React.useEffect(() => {
@@ -47,6 +48,7 @@ const Home = () => {
       </ScrollAnimation>
 
       <div className="md-space" />
+      <Slider />
       <Mission />
 
       <div className="md-space" />

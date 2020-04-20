@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutInfo = () => {
   return (
-    <div class="ai-container">
+    <div className="ai-container">
       <h1 className="heading ab-wra">About </h1>
       <ul>
         <li>

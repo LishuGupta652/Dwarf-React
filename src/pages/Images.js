@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Image from "../components/Image";
 import Gallary from "../components/Gallary";
 import TypewriterEffect from "../components/TypewriterEffect";
+import { Slider } from "../components/Slider";
 
 const Images = () => {
   React.useEffect(() => {
@@ -12,10 +13,21 @@ const Images = () => {
   return (
     <>
       <Header title="Images" backgroundImage="gallary.jpg">
-        <TypewriterEffect title="Images .." />
+        <h1>
+          <TypewriterEffect title="Images .." />
+        </h1>
       </Header>
-      <div className="lg-space" />
-      <Gallary />
+
+      <div
+        style={{
+          height: "100vh",
+          backgroundColor: "#f5f5f5",
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <Slider />
+      </div>
     </>
   );
 };

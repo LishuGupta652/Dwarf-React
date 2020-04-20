@@ -37,7 +37,6 @@ class App extends Component {
             <Route path="/products/:id" component={SingleProduct} />
             <Route component={NotFound} />
           </Switch>
-          <div className="md-space" />
           <Footer />
         </BrowserRouter>
       </>
