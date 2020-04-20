@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <>
       <Header title="Contact Us" backgroundImage="contact.jpg">
-        <TypewriterEffect title="Contact" />
+        <TypewriterEffect title="Contact Us .." />
       </Header>
       <ContactForm />
     </>

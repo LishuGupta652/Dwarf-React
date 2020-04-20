@@ -468,11 +468,11 @@ hr {
 ----------------------------------------------- */
 footer {
   width: 80%;
-  margin: 20px auto;
+  margin: 0px auto;
   padding: 10px 0;
 }
 footer h2 {
-  color: rgb(44, 43, 43);
+  color: rgb(150, 150, 150);
   position: relative;
   font-size: 18px;
 }
@@ -524,7 +524,7 @@ footer h3 {
 .author {
   font-size: 18px;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: flex-end;
   position: relative;
   color: #121212;
@@ -539,6 +539,14 @@ footer h3 {
   width: 40px;
   height: 2px;
   background-color: #212121;
+}
+@media (max-width: 700px) {
+  .quote {
+    font-size: 22px;
+  }
+  .author {
+    font-size: 14px;
+  }
 }
 
 /* extras extras extras extras extras */

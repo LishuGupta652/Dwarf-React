@@ -12,7 +12,7 @@ const Product = (props) => {
     <div>
       <Header title="Services" backgroundImage="services.jpg">
         <h1 className="title text-black">
-          <TypewriterEffect title="Services" />
+          <TypewriterEffect title="Services .." />
         </h1>
       </Header>
       <Services />

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, lazy } from "react";
 import "./App.css";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
@@ -37,9 +37,9 @@ class App extends Component {
             <Route path="/products/:id" component={SingleProduct} />
             <Route component={NotFound} />
           </Switch>
+          <div className="md-space" />
+          <Footer />
         </BrowserRouter>
-        <div className="md-space" />
-        <Footer />
       </>
     );
   }

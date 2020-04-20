@@ -12,7 +12,7 @@ const About = () => {
   return (
     <>
       <Header title="About Us" backgroundImage="about.jpg">
-        <TypewriterEffect title="About" />
+        <TypewriterEffect title="About Us .." />
       </Header>
       <WhoAreWe />
       <AboutInfo />

@@ -12,7 +12,7 @@ const Images = () => {
   return (
     <>
       <Header title="Images" backgroundImage="gallary.jpg">
-        <TypewriterEffect title="Images" />
+        <TypewriterEffect title="Images .." />
       </Header>
       <div className="lg-space" />
       <Gallary />
